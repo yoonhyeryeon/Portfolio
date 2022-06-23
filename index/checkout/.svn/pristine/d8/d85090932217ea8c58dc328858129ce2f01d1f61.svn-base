@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/common.css">
+
+
+    <script src="https://kit.fontawesome.com/caaaa5d491.js" crossorigin="anonymous"></script>
+
+
+    <title>RFID생산정보시스템</title>
+</head>
+
+<body>
+
+
+
+    <div id="skipNav">
+        <a href="#content">본문 바로가기</a>
+        <a href="#gnb">네비게이션바로가기</a>
+    </div>
+    <div id="wrap">
+        <header id="headerArea">
+            <div class="headerwrap">
+                <div class="headerInner">
+                    <h1 class="hidden">KGC인삼공사 RFID생산정보시스템</h1>
+                    <nav id="gnb" class="main-menu">
+                        <h2 class="hidden">글로벌네비게이션</h2>
+                        <ul>
+                            <li>
+                                <h3>
+                                    <a class="current" href="#">제품기초등록</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="#">생산매핑조회</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="#">출고처리조회</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="#">출고원장조회</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="#">RFID발주생성</a>
+                                </h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="#">RFID대비 매핑처리조회</a>
+                                </h3>
+                            </li>
+                        </ul>
+
+                    </nav>
+                </div>
+            </div>
+
+            <div class="header-notice">
+                <p arial-label="설명">&#42; 제품등록 후 RFID DATA로 한번이라도 생성된 제품코드 정보내용은 수정이나 삭제가 불가합니다.</p>
+            </div>
+        </header>
+
+
+        <article id="content">
+            <h2 class="hidden">본문영역</h2>
+
+            <section id="product-list">
+                <h3><i class="far fa-calendar-minus"></i>품목리스트 </h3>
+
+                <div class="product-list-search">
+
+                    <form action="" method="POST">
+                        <label for="product-search" class="search-kr">품목 검색</label>
+                        <input type="search" name="product-search" id="product-search" placeholder="검색어를 입력하세요.">
+                        <label for="btn-search" class="hidden"> 돋보기버튼 </label>
+                        <button id="search-btn" type="submit" title="검색" class="btn-search">
+                            <span class="hidden">검색</span>
+                            <i class="fas fa-search"> </i>
+                        </button>
+                    </form>
+
+                </div>
+
+                <div class="table-wrap">
+                    <!-- 품목리스트 탭 -->
+                    <ul class="tabs">
+                        <li><a class="tab tab1" href="#">단일 품목 리스트</a></li>
+                        <li><a class="tab tab2" href="#">세트 품목 리스트</a></li>
+                    </ul>
+
+                    <!--  품목리스트 테이블 헤더와 테이블 데이터 -->
+                    <div class="scroll-box">
+                        <table class="table-content1">
+                            <caption class="hidden">단일품목리스트와 세트품목리스트</caption>
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="table-head">선택</th>
+                                    <th scope="col" class="table-head">제품바코드</th>
+                                    <th scope="col" class="table-head">제품명</th>
+                                    <th scope="col" class="table-head">용량</th>
+                                    <th scope="col" class="table-head">박스바코드</th>
+                                    <th scope="col" class="table-head">본업수</th>
+                                    <th scope="col" class="table-head">대박스바코드</th>
+                                    <th scope="col" class="table-head">본업수</th>
+                                </tr>
+                            </thead>
+                            <tbody class="contlist">
+                                <tr class="comment">
+                                    <td class="table-data">
+                                        <input type="checkbox" name="product-list-checkbox">
+                                    </td>
+                                    <td class="table-data"></td>
+                                    <td class="table-data"></td>
+                                    <td class="table-data"></td>
+                                    <td class="table-data"></td>
+                                    <td class="table-data"></td>
+                                    <td class="table-data"></td>
+                                    <td class="table-data"></td>
+                                </tr>
+                            </tbody>
+
+                            <tbody class="contlist">
+                                <tr class="comment">
+                                    <td class="table-data">
+                                        <input type="checkbox" name="product-list-checkbox">
+                                    </td>
+                                    <td class="table-data"></td>
+                                    <td class="table-data"></td>
+                                    <td class="table-data"></td>
+                                    <td class="table-data"></td>
+                                    <td class="table-data"></td>
+                                    <td class="table-data"></td>
+                                    <td class="table-data"></td>
+                                </tr>
+                            </tbody>
+
+
+
+                        </table>
+
+                    </div>
+                </div>
+            </section>
+
+            <section id="product-on">
+                <h3>
+                    <i class="far fa-calendar-minus"></i>
+                    제품 기초자료 등록
+                </h3>
+
+                <div class="button-box">
+                    <form action="" method="POST">
+
+                        <label for="save-btn" class="hidden">저장</label>
+                        <button id="save-btn" type="submit" title="저장" class="save_button">저장</button>
+                        <label for="delete-btn" class="hidden">삭제</label>
+                        <button id="delete-btn" type="submit" title="삭제" class="delete_button">삭제</button>
+                        <label for="modify-btn" class="hidden">수정모드</label>
+                        <button id="modify-btn" type="submit" title="수정모드" class="modify_button">수정모드</button>
+
+                    </form>
+                </div>
+                <!-- 단일품목등록 -->
+
+                <div class="piece-product-on">
+                    <h4>
+                        <i class="far fa-clone"></i>
+                        단일품목 등록
+                    </h4>
+                    <div class="form-wrap">
+                        <form action="" method="POST">
+
+                            <ul class="form-left">
+                                <li>
+                                    <label for="product-name" class="hidden">제품명</label>
+                                    <span>제품명</span>
+                                    <input type="text" name="product-name" id="product-name" placeholder="제품명을 입력하세요">
+                                </li>
+                                <li>
+                                    <label for="product-code" class="hidden">제품바코드</label>
+                                    <span>제품바코드</span>
+                                    <input type="textr" name="product-code" id="product-code">
+                                </li>
+                                <li>
+                                    <label for="box-code" class="hidden">박스바코드</label>
+                                    <span>박스바코드</span>
+                                    <input type="text" name="box-code" id="box-code">
+                                </li>
+                                <li>
+                                    <label for="bigbox-cod" class="hidden">대박스바코드</label>
+                                    <span>대박스바코드</span>
+                                    <input type="text" name="bigbox-cod" id="bigbox-cod">
+                                </li>
+                            </ul>
+
+                            <ul class="form-right">
+
+                                <li>
+                                    <label for="product-capacity" class="hidden">용량</label>
+                                    <span>용량</span>
+                                    <input type="number" name="product-capacity" id="product-capacity">
+                                </li>
+                                <li>
+                                    <label for="data-code" class="hidden">전산코드</label>
+                                    <span>전산코드</span>
+                                    <input type="text" name="data-code" id="data-code">
+                                </li>
+                                <li>
+                                    <label for="amount1" class="hidden">본입수량</label>
+                                    <span>본입수량</span>
+                                    <input type="text" name="amount1" id="amount1">
+                                </li>
+                                <li>
+                                    <label for="amount2" class="hidden">본입수량</label>
+                                    <span>본입수량</span>
+                                    <input type="text" name="amount2" id="amount2">
+                                </li>
+
+                            </ul>
+                        </form>
+                        <div class="button_wrap">
+                            <label for="code-btn" class="hidden">코드생성</label>
+                            <button type="submit" name="code-btn" id="code-btn"><a href="#">코드생성</a></button>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <!-- 세트품목등록 -->
+                <div class="set-product-on">
+                    <h4>
+                        <i class="far fa-clone"></i>
+                        세트품목 등록
+                        <span>&#42; 세트 구성품은 단일품목리스트에서 선택함.</span>
+                    </h4>
+                    <div class="set-form-wrap">
+                        <form action="" method="POST">
+
+                            <ul class="set-form-left">
+                                <li>
+                                    <label for="set-product-name" class="hidden">제품명</label>
+                                    <span>제품명</span>
+                                    <input type="text" name="set-product-name" id="set-product-name" placeholder="제품명을 입력하세요">
+                                </li>
+                                <li>
+                                    <label for="set-product-code" class="hidden">제품바코드</label>
+                                    <span>제품바코드</span>
+                                    <input type="text" name="set-product-code" id="set-product-code">
+                                </li>
+                                <li>
+                                    <label for="set-box-code" class="hidden">박스바코드</label>
+                                    <span>박스바코드</span>
+                                    <input type="text" name="box-code" id="set-box-code">
+                                </li>
+                                <li>
+                                    <label for="set-bigbox-cod" class="hidden">대박스바코드</label>
+                                    <span>대박스바코드</span>
+                                    <input type="text" name="set-bigbox-cod" id="set-bigbox-cod">
+                                </li>
+                            </ul>
+
+                            <ul class="set-form-right">
+
+                                <li>
+                                    <label for="set-product-capacity" class="hidden">용량</label>
+                                    <span>용량</span>
+                                    <input type="number" name="set-product-capacity" id="set-product-capacity">
+                                </li>
+                                <li>
+                                    <label for="set-data-code" class="hidden">전산코드</label>
+                                    <span>전산코드</span>
+                                    <input type="text" name="set-data-code" id="set-data-code">
+                                </li>
+                                <li>
+                                    <label for="set-amount1" class="hidden">본입수량</label>
+                                    <span>본입수량</span>
+                                    <input type="text" name="set-amount1" id="set-amount1">
+                                </li>
+                                <li>
+                                    <label for="set-amount2" class="hidden">본입수량</label>
+                                    <span>본입수량</span>
+                                    <input type="text" name="set-amount2" id="set-amount2">
+                                </li>
+
+                            </ul>
+                        </form>
+                        <div class="set-button_wrap">
+                            <label for="code-btn" class="hidden">코드생성</label>
+                            <button type="submit" name="set-code-btn" id="set-code-btn"><a href="#">코드생성</a></button>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <!-- 세트품목등록 테이블 -->
+
+                <div class="set-table-wrap">
+                    <div class="set-table-box">
+                        <table class="table-content2">
+                            <caption class="hidden">세트품목등록 테이블</caption>
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="table-head2">제품바코드</th>
+                                    <th scope="col" class="table-head2">제품명</th>
+                                    <th scope="col" class="table-head2">용량</th>
+                                    <th scope="col" class="table-head2">
+                                        <sapn class="hidden">삭제아이콘</sapn>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>
+                                        <a href="#">
+                                            <i arial-label="삭제아이콘" class="fas fa-minus-circle"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </section>
+        </article>
+
+
+
+        <footer id="footerArea">
+            <div class="footer_wrap">
+                <p>&copy; KGC 인삼공사 2021</p>
+
+            </div>
+        </footer>
+
+    </div>
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="../js/tab.js"></script>
+
+
+</body></html>

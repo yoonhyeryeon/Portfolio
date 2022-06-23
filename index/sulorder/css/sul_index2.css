@@ -1,0 +1,192 @@
+#content {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    margin: 50px 20px;
+    padding: 0 100px;
+
+}
+
+
+/* 기간 조회 영역 */
+
+#date h3 {
+    font-family: 'Nanumsquare';
+    font-size: 1.375rem;
+    color: #333;
+    margin: 50px 0 30px
+}
+
+.date-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0 30px;
+}
+
+
+/* datepicker */
+
+
+.date-wrap .double {
+    margin-bottom: 30px;
+}
+
+.date-wrap .double .picker1,
+.date-wrap .double .picker2 {
+    background: url(../images/calendar.png) no-repeat;
+    background-position: right;
+    background-position-x: 185px;
+    background-color: #fff;
+    width: 200px;
+    padding: 8px;
+    border: 1px solid #999;
+    font-size: 1.25rem;
+    border-radius: 3px;
+    text-align: center;
+}
+
+
+/* 금월 3개월 6개월 버튼 */
+
+
+.date-wrap .button-box>button {
+    background-color: #276678;
+    color: #fff;
+    font-size: 1.125rem;
+    width: 100px;
+    padding: 5px 0;
+    cursor: pointer;
+}
+
+/* 조회버튼 */
+ 
+.date-wrap .button-box>button:nth-child(4) {
+    display: block;
+    width: 308px;
+    margin-top: 15px;
+}
+
+.date-wrap .button-box>button:hover {
+    background-color: #1687a7;
+}
+
+/* 기간조회목록 */
+
+
+#list-date {
+    height: 100%;
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+#list-date .list-wrap {
+    background-color: #fff;
+    height: 100%;
+    margin-bottom: 50px;
+}
+
+#list-date .list-box {
+    width: 90%;
+    margin: 0 auto;
+    display:flex;
+    flex-direction: column;
+}
+
+/* 공통 ul li  */
+
+#list-date .list-box ul {
+display: flex;
+justify-content: space-around;
+width: 100%;
+}
+
+#list-date .list-box ul li {
+    width: 20%;
+    text-align: center;
+}
+
+/* theadArea 영역 */
+
+#list-date .list-box .theadArea {
+    padding: 15px 0;
+    background: rgba(206,224,236,.5);
+    font-size: 1.125rem;
+    color: #4c4b4b;
+    font-weight: 500;
+}
+
+#list-date .list-box .theadArea:first-child {
+    margin-top: 30px;
+}
+
+
+
+/* 맨위 thead만 보이게 하기 */
+
+#list-date .list-box .theadArea:not(:nth-of-type(1)){
+    display: none;
+}
+
+
+
+/* tbodyArea 영역 */
+
+#list-date .list-box .tbodyArea {
+    border-bottom: 1px solid #f1f0f0;
+    padding: 10px 0;
+}
+
+#list-date .list-box .tbodyArea:last-child {
+    margin-bottom: 30px;
+}
+
+
+
+/* 미디어쿼리 */
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+    #content{
+        padding: 0 30px;
+    }
+
+}
+
+@media screen and (min-width: 375px) and (max-width: 768px) {
+    #content{
+        padding: 0 10px;
+    }
+    .date-wrap .double .picker1,
+    .date-wrap .double .picker2 {
+        background-position-x: 110px ;
+        width: 130px;
+        padding: 4px;
+    }
+    #list-date .list-box .theadArea {
+        background-color: transparent;
+        display: inline-flex;
+        flex-flow: column;
+    }
+    #list-date .list-box .theadArea:not(:nth-of-type(1)){
+        display: flex;
+    }
+
+    #list-date .list-box .tbodyArea {
+        border-bottom: none;
+        flex-flow: column;
+    }
+
+    #list-date .list-box .theadArea:not(:nth-of-type(1)){
+        display: flex;
+    }
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 375px) {
+
+}

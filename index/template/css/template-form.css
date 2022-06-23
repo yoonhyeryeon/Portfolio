@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Mono", sans-serif;
+}
+
+h1 {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 1.875rem;
+    color: #666;
+    margin: 30px;
+}
+
+h2 {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 1rem;
+    color: #333;
+    margin: 35px 70px 10px;
+}
+
+h4 {
+    margin: 20px 5px;
+}
+
+ul,
+ol,
+dl {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.section-wrap {
+    margin: 10px auto;
+    padding: 10px;
+    border: 0.5px solid #a0c1b8;
+    border-radius: 3px;
+    width: 90%;
+}
+
+
+
+
+/* .page {
+    text-align: center;
+    width: 50%;
+}
+
+.pagination {
+    list-style: none;
+    display: inline-block;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.pagination li {
+    display: inline;
+    text-align: center;
+}
+
+.pagination a {
+    float: left;
+    display: block;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 5px 12px;
+    color: #96a0ad;
+    line-height: 1.5rem;
+    transition: background-color .3s;
+}
+
+.first {
+    margin-right: 15px;
+}
+
+.last {
+    margin-left: 15px;
+}
+
+.first:hover, .last:hover, .left:hover, .right:hover {
+    color: #2e9cdf;
+}
+
+.pagination a.active{
+    cursor: default;
+    color: #fff;
+}
+
+.pagination a.active {
+    outline: none;
+}
+
+.modal .num {
+    margin-left: 3px;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 100%;
+}
+
+.modal .num:hover {
+    background-color: #2e9cdf;
+    color: #fff;
+}
+
+.modal .num.active, .modal .num:active {
+    background-color: #2e9cdf;
+    cursor: pointer;
+}
+
+.arrow-left {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid blue;
+} */

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/caaaa5d491.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <script src="./js/all.min.js"></script>
+    <link rel="stylesheet" href="./css/sulcommon.css">
+    <link rel="stylesheet" href="./css/sul_index2.css">
+    <link rel="stylesheet" href="./css/datepicker.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="skipNav">
+        <a href="#content">본문 바로가기</a>
+        <a href="#gnb">네비게이션바로가기</a>
+    </div>
+
+    <div class="wrap">
+        <header id="headerArea">
+            <div class="header-wrap">
+
+                <div class="logo-area">
+                    <h1>
+                        <span class="hidden">술오더</span>
+                        <img src="./images/logo_top_wh.png" alt="로고">
+                    </h1>
+                </div>
+                <div class="toggle-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+
+            <nav>
+
+            </nav>
+        </header>
+
+        <article id="content">
+            <h2 class="hidden">본문영역</h2>
+
+            <section id="date">
+                <h3 class="hidden">기간 조회</h3>
+                <div class="date-wrap">
+                    <div class="double">
+                        <input id="datepicker1" class="picker1" type="text">
+                        -
+                        <input id="datepicker2" class="picker2" type="text">
+
+                    </div>
+                    <div class="button-box">
+                        <button type="butotn" class="this_month" name="list-button" title="금월">금월</button>
+                        <button type="button" class="3_month" namne="list-button" title="3개월">3개월</button>
+                        <button type="button" class="6_month" name="list-button" title="6개월">6개월</button>
+                        <button type="button" class="check-list" name="list-button" title="조회">조회</button>
+                    </div>
+
+                </div>
+            </section>
+
+            <section id="list-date">
+                <div class="list-wrap">
+                    <div class="list-box">
+                        <ul class="theadArea">
+                            <li>일자 </li>
+                            <li>매입액</li>
+                            <li>지급액</li>
+                            <li>잔액</li>
+                        </ul>
+                        <ul class="tbodyArea"> 
+                            <li>2021-03-11</li>
+                            <li>148,000</li>
+                            <li>148,000</li>
+                            <li>0</li>
+                        </ul>
+                        <ul class="theadArea">
+                            <li>일자 </li>
+                            <li>매입액</li>
+                            <li>지급액</li>
+                            <li>잔액</li>
+                        </ul>
+                        <ul class="tbodyArea"> 
+                            <li>2021-03-11</li>
+                            <li>148,000</li>
+                            <li>148,000</li>
+                            <li>0</li>
+                        </ul>
+                        <ul class="theadArea">
+                            <li>일자 </li>
+                            <li>매입액</li>
+                            <li>지급액</li>
+                            <li>잔액</li>
+                        </ul>
+                        <ul class="tbodyArea"> 
+                            <li>2021-03-11</li>
+                            <li>148,000</li>
+                            <li>148,000</li>
+                            <li>0</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </section>
+        </article>
+
+    </div>
+
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="./js/datepicker.min.js"></script>
+    <script src="./js/datepicker.ko.js"></script>
+    <script src="./js/date.js"></script>
+
+</body>
+
+</html>

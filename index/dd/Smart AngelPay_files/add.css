@@ -1,0 +1,224 @@
+.div-box {
+    display: flex;
+    gap: 10px;
+    /* border-radius: 5px;
+    background: #e6e6e4;
+    box-shadow: 5px 5px 10px #dfdfdd,
+        -5px -5px 10px #ededeb; */
+    padding: 10px 0 50px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    background: #e6e6e4;
+    box-shadow: 5px 5px 9px #dddddb, -5px -5px 9px #efefed;
+}
+
+.header-wrap {
+    /* border-radius: 10px;
+    background: #e6e6e4;
+    box-shadow: 5px 5px 9px #dddddb, -5px -5px 9px #efefed; */
+    /* border-radius: 8px;
+    background: #e6e6e4;
+    box-shadow: inset 5px 5px 5px #e1e1df, inset -5px -5px 5px #ebebe9; */
+    border-radius: 7px;
+    background: #e6e6e4;
+    box-shadow: inset 5px 5px 3px #dddddb,
+        inset -5px -5px 3px #efefed;
+}
+
+.ul-box {
+    background-color: #e6e6e4;
+    /* border-radius: 2px;
+    background: #e6e6e4;
+    box-shadow: inset 5px 5px 15px #dbdbd9,
+        inset -5px -5px 15px #f2f2ef; */
+    border: none;
+    /* border-bottom: 2px solid #e0e0e0;
+    border-top: 2px solid #e0e0e0; */
+    display: flex;
+    justify-content: center;
+}
+
+.ul-box li {
+    padding: 20px;
+    margin-right: 20px;
+    /* border-radius: 8px;
+    background: #e6e6e4;
+    box-shadow: inset 5px 5px 5px #e1e1df,
+        inset -5px -5px 5px #ebebe9; */
+    border-radius: 7px;
+    background: #e6e6e4;
+    box-shadow: inset 5px 5px 3px #dddddb,
+        inset -5px -5px 3px #efefed;
+}
+
+.ul-box li a {
+    margin-right: 0;
+}
+
+.frame-box {
+    padding: 20px 10px;
+    background-color: #e6e6e4;
+    /* border-radius: 2px;
+    background: #e6e6e4;
+    box-shadow: inset 5px 5px 15px #dbdbd9,
+        inset -5px -5px 15px #f2f2ef; */
+}
+
+.box-wrap {
+    /* border-radius: 10px;
+    background: #e6e6e4;
+    box-shadow: 5px 5px 9px #dddddb,
+        -5px -5px 9px #efefed; */
+    padding: 10px 0 30px;
+    height: 385px;
+}
+
+.box2-wrap {
+    /* border-radius: 7px;
+    background: #e6e6e4;
+    box-shadow: -5px -5px 5px #e1e1df,
+        5px 5px 5px #ebebe9; */
+    border-radius: 10px;
+    background: #e6e6e4;
+    box-shadow: 5px 5px 9px #dddddb,
+        -5px -5px 9px #efefed;
+}
+
+.remove-ab table tr td {
+    color: #555;
+}
+
+.button-box {
+    display: flex;
+    margin: 10px 0;
+}
+
+.button-box li:first-child {
+    display: flex;
+    justify-content: center;
+}
+
+.button-box li {
+    padding-right: 10px;
+}
+
+.button-box li a {
+    /* border-radius: 7px;
+    background: #e6e6e4;
+    box-shadow:  -5px -5px 9px #dddddb,
+                 5px 5px 9px #efefed; */
+    border-radius: 7px;
+    background: #e6e6e4;
+    box-shadow: -5px -5px 8px #dddddb,
+        5px 5px 8px #efefed;
+    color: #555;
+}
+
+/* .button-box li a:hover  {
+    border-radius: 8px;
+    background: #e6e6e4;
+    box-shadow: inset 5px 5px 5px #e1e1df, inset -5px -5px 5px #ebebe9
+} */
+
+.button-box li a:hover,
+.button-box li a:active,
+.button-box li a:focus {
+    border: 1px solid transparent;
+    border-radius: 7px;
+    background: #e6e6e4;
+    box-shadow: inset 5px 5px 2px #dfdfdd,
+        inset -5px -5px 2px #ededeb;
+        color: #f1f1f1;
+}
+
+.button-box-scroll {
+    height: 255px;
+    overflow-y: auto;
+    border-radius: 10px;
+    background: #f1f1f0;
+    box-shadow: 5px 5px 9px #dddddb, -5px -5px 9px #efefed;
+}
+
+.button-box-scroll>table {
+    border-radius: 10px;
+    background: #f1f1f0;
+    border: none;
+}
+
+.button-box-scroll>table thead th:first-child {
+    border-top-left-radius: 10px;
+}
+
+.button-box-scroll>table thead th:last-child {
+    border-top-right-radius: 10px;
+}
+
+.button-box-scroll>table tbody tr:hover {
+   background-color: rgba(179,196,208,.3);
+}
+
+.button-box2-scroll>table tbody tr:hover {
+    background-color: rgba(179,196,208,.3);
+ }
+ 
+.button-box2-scroll {
+    border-radius: 10px;
+    background: #f1f1f0;
+    box-shadow: 5px 5px 9px #dddddb, -5px -5px 9px #efefed;
+} 
+
+.button-box2-scroll table {
+    border-radius: 10px;
+    background: #f1f1f0;
+    border: none;
+}
+
+.button-box2-scroll table thead th:first-child {
+    border-top-left-radius: 10px;
+}
+
+.button-box2-scroll table thead th:last-child {
+    border-top-right-radius: 10px;
+}
+
+
+.header-h6 {
+    padding: 10px;
+    margin: 0;
+}
+
+.remove-ab {
+    padding-top: 0;
+}
+
+.remove-ab table thead tr {
+    position: static;
+}
+
+.nav-color {
+    background-color: #e6e6e4;
+    border-bottom: none;
+}
+
+.logo-back {
+    background-color: #e6e6e4;
+    padding: 20px 30px 0;
+}
+
+.body-box {
+    background-color: #e6e6e4;
+}
+
+.btn-new {
+    border: 1px solid rgba(215, 215, 215, .3);
+    /* background: #2ea1f8; */
+}
+
+.padding-z-top {
+    padding-top: 0
+}
+
+.div-box2 {
+    height: 350px;
+    padding: 0;
+}

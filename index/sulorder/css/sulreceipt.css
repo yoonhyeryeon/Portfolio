@@ -1,0 +1,716 @@
+#content {
+    min-height: 100%;
+    position: relative;
+    overflow-y: hidden;
+}
+
+.order-inform-wrap::-webkit-scrollbar {
+    width: 10px;
+}
+
+.order-inform-wrap::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.order-inform-wrap::-webkit-scrollbar-thumb {
+    background-color: #4c4b4b;
+    border-radius: 15px;
+}
+
+.order-inform-wrap::-webkit-scrollbar-thumb:hover {
+    background: #30475e;
+}
+
+.order-inform-wrap::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment {
+    width: 5px;
+    height: 5px;
+    background:transparent;
+}
+
+
+/* 공급자 구입자 정보  */
+
+
+#order-user {
+    margin: 30px auto;
+    /* border: 1px solid #ccc; */
+    width: 95%;
+    padding-bottom: 30px;
+}
+
+/* 공급자 구입자 정보 헤더부분 */
+
+#order-user h2 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#order-user .order-user-header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.order-user-header .receipt-img-box {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #cbcbcb;
+    background-image: url(../images/receipt.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 20px;
+}
+
+.order-user-header .receipt-inform1 li {
+    margin-left: 20px;
+    padding: 5px 0;
+    font-weight: 500;
+}
+
+.order-user-header .receipt-inform2 li {
+    margin-left: 20px;
+    padding: 5px 0;
+    font-weight: 400;
+}
+
+
+
+/*  공급자 구입자 탭 영역 */
+
+
+/* 공급자 정보 영역 */
+
+.user-provider {
+    display: flex;
+    justify-content: space-around;
+}
+
+.provider-inform {
+    margin-top: 30px;
+    position: relative;
+}
+
+.provider-inform .provider-tab1 {
+    width: 95%;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #2e4162;
+    padding: 10px 0;
+}
+
+.provider-inform .provider-tab1:hover,
+.purchaser-inform .purchaser-tab2:hover
+{
+    /* background-color:rgba(46,65,98,.9); */
+}
+
+
+.provider-inform .provider-tab1 .fa-chevron-down {
+    color: #fff;
+    font-size: 1.25rem;
+    margin-left: 20px;
+}
+
+.provider-inform .provider-tab1 .trans {
+    color: #fff;
+    font-size: 1.25rem;
+    margin-left: 20px;
+    -webkit-transform: rotate(180deg);
+    transition: all 0.8s ease-in
+}
+
+.purchaser-inform .purchaser-tab2 .trans {
+    color: #fff;
+    font-size: 1.25rem;
+    margin-left: 20px;
+    -webkit-transform: rotate(180deg);
+    transition: all 0.8s ease-in
+}
+
+.provider-inform .provider-tab1 span {
+    color: #fff;
+    font-weight: 600;
+    font-family: 'Nanumsquare';
+    font-size: 1.25rem;
+}
+
+.provider-inform .user-provider-wrap {
+    display: none;
+}
+
+.purchaser-inform .user-purchaser-wrap {
+    display: none;
+}
+
+.provider-inform .user-provider {
+    width: 95%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px 5px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    border: .5px solid #2e4162;
+}
+
+.provider-left li {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #666;
+    line-height: 2em;
+
+}
+
+.provider-right li {
+    font-size: 1rem;
+    line-height: 2em;
+}
+
+
+.provider-right li:nth-of-type(2) address {
+    font-size: 0.875rem;
+    font-style: normal;
+}
+
+
+
+/* 구입자 정보 영역 */
+
+.user-purchaser {
+    display: flex;
+    justify-content: space-around;
+}
+
+.purchaser-inform {
+    margin-top: 30px;
+    position: relative;
+}
+
+.purchaser-inform .purchaser-tab2 {
+    width: 95%;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #2e4162;
+    padding: 10px 0;
+}
+
+.purchaser-inform .purchaser-tab2 .fa-chevron-down {
+    color: #fff;
+    font-size: 1.25rem;
+    margin-left: 20px;
+}
+
+.purchaser-inform .purchaser-tab2 span {
+    color: #fff;
+    font-weight: 600;
+    font-family: 'Nanumsquare';
+    font-size: 1.25rem;
+}
+
+.purchaser-inform .user-purchaser {
+    width: 95%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px 5px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border:.5px solid #2e4162   
+}
+
+.user-purchaser .purchaser-left li {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #666;
+    line-height: 2em;
+}
+
+.purchaser-right li {
+    font-size: 1rem;
+    line-height: 2em;
+}
+
+.purchaser-right li:nth-of-type(2) address {
+    font-size: 0.875rem;
+    font-style: normal;
+}
+
+
+/* 주문정보와 총 합 */
+
+#order-inform-amount {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* 주문 정보 영역 */
+
+#order-inform {
+    border: 1px solid #f3f3f3;
+    border-radius: 15px;
+    height: 300px;
+    width: 48%;
+    background-color: #f3f3f3;
+}
+
+.order-inform-wrap {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 280px;
+}
+
+.order-inform-box {
+
+    margin: 20px auto 0;
+    width: 90%;
+    background-color: #fff;
+    border-radius: 10px;
+
+}
+
+.order-receipt2 li span:nth-of-type(1) {
+    display: none;
+}
+
+.order-receipt1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+.order-receipt1 li {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #2e4162;
+}
+
+.order-receipt1>li span {
+    font-size: 1rem;
+    padding-right: 10px;
+}
+
+.order-receipt2 {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+
+/* .order-inform-box::after {
+    content: '';
+    display: block;
+    width: 40%;
+    height: 2px;
+    background-color: #d3e0ea;
+    margin: 20px auto;
+    position: absolute;
+} */
+
+.order-receipt2 .receipt-name1 li,
+.order-receipt2 .receipt-name2 li {
+    font-family: 'Nanumsquare';
+    font-weight: 600;
+    font-size: 1.125rem;
+    color: #666;
+    line-height: 2em;
+}
+
+.order-receipt2 .receipt-content1 li,
+.order-receipt2 .receipt-content2 li {
+    font-family: 'Roboto', sans-serif;
+    line-height: 2em;
+    font-size: 1.125rem;
+    color: #333;
+}
+
+.order-receipt2 .receipt-name1 li:nth-of-type(1) {
+    color: #ff4c4c;
+}
+
+.order-receipt2 .receipt-name1 li:nth-of-type(2) {
+    color: #fdbd10;
+}
+
+.order-receipt2 .receipt-name1 li:nth-of-type(3) {
+    color: #86b817;
+}
+
+.order-receipt2 .receipt-name2 li:nth-of-type(1) {
+    color: #2292a7;
+}
+
+.order-receipt2 .receipt-name2 li:nth-of-type(2) {
+    color: #70a61c;
+}
+
+.order-receipt2 .receipt-name2 li:nth-of-type(3) {
+    color: #30475e;
+}
+
+
+/* 총합계 영역 */
+
+#amount-section {
+    width: 48%;
+}
+
+#amount-section .amount-list {
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 31px 0;
+    border:1px solid #f3f3f3;
+
+}
+
+#amount-section .amount-list .amount-name1 li,
+#amount-section .amount-list .amount-name2 li {
+    font-family: 'Nanumsquare';
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 3em;
+    color: #666;
+}
+
+#amount-section .amount-list .amount-name1 li:nth-of-type(1){
+    color: #ff4c4c;
+}
+
+#amount-section .amount-list .amount-name1 li:nth-of-type(2) {
+    color:#2292a7;
+}
+
+#amount-section .amount-list .amount-content1 li,
+#amount-section .amount-list .amount-content2 li {
+    font-size: 1.125rem;
+    color: #666;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    line-height: 3em;
+}
+
+#amount-section .amount-box {
+    display: flex;
+    background-color: #f3f3f3;
+    padding: 29px 0;
+    justify-content: space-around;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+#amount-section .amount-box-name li,
+#amount-section .amount-box-content li {
+    line-height: 1.5em;
+}
+
+
+#amount-section .amount-box .amount-box-name li {
+    font-family: 'Nanumsquare';
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 2em;
+    color: #2e4162;
+}
+
+#amount-section .amount-box .amount-box-name li:nth-of-type(1) span {
+    font-size: 0.875rem;
+    font-weight: normal;
+    vertical-align: baseline;
+}
+
+#amount-section .amount-box .amount-box-content li {
+    font-size: 1.125rem;
+    color: #2e4162;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    line-height: 2em;
+}
+
+
+
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+    #order-user {
+        padding-bottom: 10px;
+    }
+
+    .order-user-header {
+        margin-bottom: 25px;
+    }
+
+    .provider-inform {
+        margin-top: 0;
+    }
+
+    .purchaser-inform {
+        margin-top: 30px;
+    }
+
+    .provider-right li:nth-of-type(2) address {
+        font-size: 0.75rem;
+        width: 98%;
+    }
+
+    .purchaser-right li:nth-of-type(2) address {
+        font-size: 0.75rem;
+        width: 98%;
+    }
+
+    .order-receipt1 li,
+    .order-receipt2 .receipt-name1 li,
+    .order-receipt2 .receipt-name2 li,
+    .order-receipt2 .receipt-content1 li,
+    .order-receipt2 .receipt-content2 li,
+    #amount-section .amount-list .amount-name1 li,
+    #amount-section .amount-list .amount-name2 li,
+    #amount-section .amount-list .amount-content1 li,
+    #amount-section .amount-list .amount-content2 li {
+        font-size: 1rem;
+    }
+
+    #amount-section .amount-list {
+        padding: 15px 0;
+    }
+
+    /* #amount-section {
+        margin: 27px 10px;
+    } */
+
+    #order-inform {
+        height: 260px;
+    }
+
+    .order-inform-wrap {
+        height: 240px;
+    }
+
+    .order-receipt1 {
+        padding: 0 10px;
+    }
+
+    .order-receipt1>li span {
+        font-size: 0.875rem;
+        padding-right: 5px;
+    }
+}
+
+@media screen and (min-width: 414px) and (max-width: 767px) {
+    .order-inform-wrap::-webkit-scrollbar {
+        width: 5px;
+    }
+    
+    #content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #order-user,
+    #order-inform-amount {
+        width: 100%;
+    }
+
+    #order-user {
+        margin: 0;
+        padding: 0;
+    }
+
+    .order-receipt2 .receipt-name1 li,
+    .order-receipt2 .receipt-name2 li,
+    .order-receipt2 .receipt-content1 li,
+    .order-receipt2 .receipt-content2 li,
+    #amount-section .amount-list .amount-name1 li,
+    #amount-section .amount-list .amount-name2 li,
+    #amount-section .amount-list .amount-content1 li,
+    #amount-section .amount-list .amount-content2 li {
+        font-size: 1rem;
+    }
+
+    .purchaser-inform {
+        margin: 20px 0 30px;
+    }
+
+    .purchaser-right li:nth-of-type(2) address,
+    .provider-right li:nth-of-type(2) address {
+        font-size: 0.625rem;
+        width: 90%;
+    }
+
+    .order-receipt1 {
+        padding: 0 10px;
+    }
+
+    #order-inform-amount {
+        display: block;
+    }
+
+    #order-inform,
+    #amount-section {
+        width: 95%;
+        margin: 0 auto;
+        margin: 10px;
+    }
+
+
+}
+
+
+
+
+@media screen and (min-width: 280px) and (max-width: 413px) {
+    .order-inform-wrap::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    #order-user {
+        width: 100%;
+    }
+
+    .order-user-header .receipt-img-box {
+        display: none;
+    }
+
+    #order-user .order-user-header {
+        margin-bottom: 0;
+    }
+
+    
+    #order-inform-amount {
+        display: block;
+    }
+
+    #order-inform,
+    #amount-section {
+        width: 95%;
+        margin: 15px auto;
+    }
+
+    #order-user {
+        margin: 0;
+        padding: 0;
+    }
+
+    .order-receipt1 {
+        padding: 0 5px;
+        font-weight: 400;
+        font-size: 1rem;
+    }
+
+    .order-receipt2 .receipt-name1 li,
+    .order-receipt2 .receipt-name2 li,
+    .order-receipt2 .receipt-content1 li,
+    .order-receipt2 .receipt-content2 li,
+    #amount-section .amount-list .amount-name1 li,
+    #amount-section .amount-list .amount-name2 li,
+    #amount-section .amount-list .amount-content1 li,
+    #amount-section .amount-list .amount-content2 li {
+        font-size: 0.875rem;
+    }
+
+    #amount-section .amount-box .amount-box-name li,
+    #amount-section .amount-box .amount-box-content li {
+        font-weight: normal;
+        font-size: 1rem;
+    }
+
+    #amount-section .amount-box .amount-box-name li:nth-of-type(1) span {
+        font-size: 0.675rem;
+    }
+
+    .purchaser-right li:nth-of-type(2) address,
+    .provider-right li:nth-of-type(2) address {
+        font-size: 0.625rem;
+        width: 95%;
+    }
+
+    .purchaser-inform {margin: 20px 0;}
+
+    .provider-inform .user-provider,
+    .purchaser-inform .user-purchaser {
+        display: flex;
+    }
+
+    .user-provider .provider-left li,
+    .user-purchaser .purchaser-left li {
+        font-size: 0.875rem;
+    }
+
+    .user-provider .provider-right li,
+    .user-purchaser .purchaser-right li {
+        font-size: 0.875rem;
+    }
+
+    .user-provider .provider-left,
+    .user-purchaser .purchaser-left {
+        display: none;
+    }
+
+    .provider-inform .user-provider,
+    .purchaser-inform .user-purchaser {
+        justify-content: flex-start;
+        padding-left: 10px;
+    }
+
+    .order-receipt2 li span:nth-of-type(2) {
+        display: none;
+    }
+
+    .order-receipt2 li span:nth-of-type(1) {
+        display: block;
+        color: #fff;
+        margin: 3px;
+        width: 20px;
+        height: 24px;
+        text-align: center;
+        font-weight: normal;
+    }
+
+    .order-inform-box .receipt-name1 li:nth-of-type(1) {
+        background-color: #de6262;
+    }
+
+    .order-inform-box .receipt-name1 li:nth-of-type(2) {
+        background-color: #eac665;
+    }
+
+    .order-inform-box .receipt-name1 li:nth-of-type(3) {
+        background-color: #726a95;
+    }
+
+    .order-inform-box .receipt-name2 li:nth-of-type(1) {
+        background-color: #1c7aa6;
+    }
+
+    .order-inform-box .receipt-name2 li:nth-of-type(2) {
+        background-color: #70a61c;
+    }
+
+    .order-inform-box .receipt-name2 li:nth-of-type(3) {
+        background-color: #30475e;
+    }
+
+    .order-receipt1>li {
+        font-size: 1rem;
+    }
+
+    .order-receipt1>li span {
+        font-size: 0.875rem;
+        padding-right: 3px;
+        font-weight: 400;
+    }
+
+    #amount-section .amount-list {
+        padding: 10px 0;
+    }
+
+    #amount-section .amount-box {
+        padding: 15px 0;
+    }
+}

@@ -1,0 +1,627 @@
+
+
+
+/* 본문영역 */
+
+#wrap {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background: #f6f6f6;
+}
+
+
+
+/* 품목리스트 SECTION */
+
+#content {
+    display: flex
+}
+
+#product-list {
+    margin: 30px 5px 30px 10px;
+    width: 60%;
+}
+
+#product-list h3 {
+    font-size: 1.25rem;
+    color: #666;
+    margin-bottom: 10px
+}
+
+#product-list h3 i {
+    font-size: 1rem;
+    margin: 8px 8px;
+    color: #666
+}
+
+#product-list .product-list-search {
+    float: right;
+    margin-right: 10px
+}
+
+#product-list .product-list-search .search-kr {
+    font-weight: 500;
+    font-size: 1.125rem;
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 5px;
+    color: #999;
+    cursor: default
+}
+
+#product-list .product-list-search #product-search {
+    height: 38px;
+    width: 230px;
+    border: 1px solid #ccc;
+    padding: 3px 5px;
+    font-size: 1rem
+}
+
+#product-list button {
+    width: 38px;
+    height: 38px;
+    background: #8AB9ED;
+    float: right;
+    cursor: pointer
+}
+
+#product-list button:hover {
+    background: #eab74a
+}
+
+#product-list i {
+    color: #fff;
+    font-size: 1.25rem
+}
+
+
+/* 품목리스트 표 전체 */
+
+#content .table-wrap {
+    width: 100%;
+    margin: 80px auto 0;
+    height: 620px
+}
+
+
+/* 품목리스트 탭 */
+
+#content .table-wrap .tabs {
+    display: flex
+}
+
+#content .table-wrap .tab {
+    margin-right: 15px;
+    margin-bottom: 2px;
+    background: #8ab9ed;
+}
+
+#content .table-wrap .tabs a:hover {
+    background: #eab74a
+}
+
+#content .table-wrap .tab {
+    display: block;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    font-size: 1.125rem;
+    color: #fff;
+    padding: 10px
+}
+/* 탭 */
+#content .table-wrap .tabs .on{
+    background: #eab74a
+}
+
+#content .table-wrap .table-content1 .contlist{
+    display: none
+}
+
+
+
+
+/* 품목리스트 테이블 헤더와 테이블 데이터 */
+
+#content .table-wrap .table-content1 {
+    width: 100%;
+    letter-spacing: 0
+}
+
+#content .table-wrap .table-content1 .table-head {
+    padding: 15px;
+    background: #f0f0f0;
+    border: 1px solid #999;
+    font-size: 0.9375rem;
+    font-weight: 600
+}
+
+#content .table-wrap .scroll-box {
+    height: 600px;
+    overflow: auto;
+    padding-bottom: 5px
+}
+
+#content .table-wrap .table-content1 td {
+    padding:6px 3px 0;
+    background: #FFF;
+    border: 1px solid #999;
+    height: 30px;
+    text-align: center
+}
+
+#content .table-wrap .table-content1 td:nth-of-type(1) {
+    padding-bottom:3px!important
+}
+#content .table-content1 th:nth-of-type(1),
+td:nth-of-type(1) {
+    width: 7.5%
+}
+
+#content .table-content1 th:nth-of-type(1) {
+    font-size: 0.75rem !important
+}
+
+#content .table-content1 th:nth-of-type(2),
+td:nth-of-type(2) {
+    width: 14%
+}
+
+#content .table-content1 th:nth-of-type(3),
+td:nth-of-type(3) {
+    width: 19%
+}
+
+#content .table-content1 th:nth-of-type(4),
+td:nth-of-type(4) {
+    width: 9%
+}
+
+#content .table-content1 th:nth-of-type(5),
+td:nth-of-type(5) {
+    width: 14%
+}
+
+#content .table_content1 th:nth-of-type(6),
+td:nth-of-type(6) {
+    width: 10%
+}
+
+#content .table-content1 th:nth-of-type(7),
+td:nth-of-type(7) {
+    width: 16%
+}
+
+#content .table-content1 th:nth-of-type(8),
+td:nth-of-type(8) {
+    width: 10%
+}
+
+#content .table-content1 td:nth-of-type(1) {
+    text-align: center
+}
+
+#content .table-content1 td:nth-of-type(1) input {
+    width: 20px;
+    height: 20px
+}
+
+
+
+
+
+
+/* 제품 기초자료 등록 SECTION*/
+
+#product-on {
+    margin: 30px 10px 0 5px;
+    width: 37%;
+}
+
+#product-on h3 {
+    font-size: 1.25rem;
+    color: #666;
+    margin-bottom: 10px
+}
+
+#product-on h3 i {
+    font-size: 1rem;
+    margin: 8px 8px;
+    color: #666
+}
+
+#product-on .button-box {
+    float: right
+}
+
+#product-on .button-box button {
+    height: 38px;
+    background: #8ab9ed;
+    padding: 0 15px;
+    color: #fff;
+    font-size: 1.125rem;
+    font-weight: 500;
+    font-family: 'Noto Sans KR', sans-serif;
+    margin-right: 10px;
+    box-shadow: 2px 3px 10px -5px #56799f;
+    border-radius: 5px
+}
+
+#product-on .button-box button:hover {
+    background: #eab74a;
+    cursor: pointer
+}
+
+
+/* 단일품목 등록 */
+
+#product-on .button-box button:last-of-type {
+    margin-right: 0
+}
+
+#product-on .piece-product-on {
+    clear: both;
+    margin: 85px 0 0 15px;
+}
+
+#product-on .piece-product-on h4 {
+    font-weight: 500
+}
+
+#product-on .piece-product-on i {
+    font-size: 14px
+}
+
+#product-on .piece-product-on .form-wrap {
+    width: 98%;
+    background: #fff;
+    margin-top: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px
+}
+
+#product-on .piece-product-on .form-wrap > form {
+    display: flex;
+    justify-content: space-around
+}
+
+#product-on .piece-product-on .form-wrap li {
+    margin: 5px;
+    text-align: center
+}
+
+#product-on .piece-product-on .form-wrap .form-left > li span {
+    display: inline-block;
+    width: 90px;
+    margin-top: 3px;
+    margin-right: 3px;
+    font-size: 0.9375rem
+}
+
+#product-on .piece-product-on .form-wrap .form-right > li span {
+    display: inline-block;
+    width: 60px;
+    margin-top: 3px;
+    margin-right: 3px;
+    font-size: 0.9375rem
+}
+
+#product-on .piece-product-on .form-wrap .form-left > li input {
+    width: 200px;
+    height: 25px;
+    padding: 3px;
+    background: rgba(255, 255, 255, 255, .8);
+    border: .5px solid #ccc;
+    border-radius: 5px
+}
+
+#product-on .piece-product-on .form-wrap .form-right > li input {
+    width: 80px;
+    height: 25px;
+    padding: 3px;
+    background: rgba(255, 255, 255, 255, .8);
+    border: .5px solid #ccc;
+    border-radius: 5px
+}
+
+#product-on .piece-product-on .button_wrap {
+    text-align: center
+}
+
+#product-on .piece-product-on #code-btn {
+    margin: 5px;
+    width: 70px;
+    height: 30px;
+    background: #8ab9ed;
+}
+
+#product-on .piece-product-on #code-btn a {
+    display: block;
+    font-weight: 600;
+    color: #fff;
+    font-family: 'NotoSansKR', sans-serif;
+    text-align: center
+}
+
+#product-on .piece-product-on #code-btn:hover {
+    background: #eab74a
+}
+
+
+/* 세트품목 등록*/
+
+#product-on .set-product-on {
+    clear: both;
+    margin: 14px 0 10px 15px;
+    overflow: hidden
+}
+
+#product-on .set-product-on h4 {
+    font-weight: 500
+}
+
+#product-on .set-product-on i {
+    font-size: 14px
+}
+
+#product-on .set-product-on h4 span {
+    font-size: 0.875rem;
+    color: #600c1d;
+    margin-left: 20px
+}
+
+#product-on .set-product-on .set-form-wrap {
+    width: 98%;
+    background: #fff;
+    margin-top: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px
+}
+
+#product-on .set-product-on .set-form-wrap > form {
+    display: flex;
+    justify-content: space-around
+}
+
+#product-on .set-product-on .set-form-wrap li {
+    margin: 5px;
+    text-align: center;
+}
+
+#product-on .set-product-on .set-form-wrap .set-form-left > li span {
+    display: inline-block;
+    width: 90px;
+    margin-top: 3px;
+    margin-right: 3px;
+    font-size: 0.9375rem
+}
+
+#product-on .set-product-on .set-form-wrap .set-form-right > li span {
+    display: inline-block;
+    width: 60px;
+    margin-top: 3px;
+    margin-right: 3px
+}
+
+#product-on .set-product-on .set-form-wrap .set-form-left > li input {
+    width: 200px;
+    height: 25px;
+    padding: 3px;
+    border: .5px solid #ccc;
+    border-radius: 5px
+}
+
+#product-on .set-product-on .set-form-wrap .set-form-right > li input {
+    width: 80px;
+    height: 25px;
+    padding: 3px;
+    background: rgba(255, 255, 255, 255, .8);
+    border: .5px solid #ccc;
+    border-radius: 5px
+}
+
+#product-on .set-product-on .set-button_wrap {
+    text-align: center
+}
+
+#product-on .set-product-on #set-code-btn {
+    margin: 5px;
+    width: 70px;
+    height: 30px;
+    background: #8ab9ed;
+}
+
+#product-on .set-product-on #set-code-btn a {
+    display: block;
+    font-weight: 600;
+    color: #fff;
+    font-family: 'NotoSansKR', sans-serif;
+    text-align: center
+}
+
+#product-on .set-product-on #set-code-btn:hover {
+    background: #eab74a
+}
+
+
+/*세트품목등록 테이블*/
+
+#product-on .set-table-wrap {
+    height: 130px;
+    overflow: auto;
+}
+
+#product-on .set-table-wrap .set-table-box {
+    zoom: 1
+}
+
+#product-on .set-table-wrap .table-content2 {
+    width: 96%;
+    margin-left: 15px;
+    border-spacing: 0;
+    table-layout: fixed
+}
+
+#product-on .set-table-wrap .table-head2 {
+    padding: 5px;
+    background: #f0f0f0;
+    border: 1px solid #999;
+    font-size: 0.9375rem;
+    font-weight: 600
+}
+
+#product-on .set-table-wrap .table-content2 th:nth-of-type(1) {
+    width: 20%
+}
+
+#product-on .set-table-wrap .table-content2 th:nth-of-type(2) {
+    width: 40%
+}
+
+#product-on .set-table-wrap .table-content2 th:nth-of-type(3) {
+    width: 20%
+}
+
+#product-on .set-table-wrap .table-content2 th:nth-of-type(4) {
+    width: 16%
+}
+
+#product-on .set-table-wrap .table-content2 td {
+    padding: 5px 10px;
+    background: #FFF;
+    border: 1px solid #999;
+    height: 20px;
+    text-align: center
+}
+
+#product-on .set-table-wrap .table-content2 td:nth-of-type(4) {
+    text-align: center;
+}
+
+#product-on .set-table-wrap .table-content2 td:nth-of-type(4) i {
+    font-size: 1.125rem;
+    color: #600c1d;
+}
+
+
+
+/* 미디어 쿼리 */
+
+@media screen and (min-width:1280px) {
+    #product-on .piece-product-on .form-wrap .form-left > li span {
+        font-size: 0.875rem;
+        width: 80px;
+    }
+
+    #product-on .piece-product-on .form-wrap .form-right > li span {
+        font-size: 0.875rem;
+        width: 70px;
+    }
+
+    #product-on .piece-product-on .form-wrap .form-left > li input {
+        width: 150px;
+    }
+
+    #product-on .piece-product-on .form-wrap .form-left > li input::placeholder {
+        font-size: 0.75rem
+    }
+
+    #product-on .set-product-on .set-form-wrap .set-form-left > li span {
+        font-size: 0.875rem;
+        width: 80px;
+    }
+
+    #product-on .set-product-on .set-form-wrap .set-form-right > li span {
+        font-size: 0.875rem;
+        width: 70px;
+    }
+
+    #product-on .set-product-on .set-form-wrap .set-form-left > li input {
+        width: 150px
+    }
+
+    #product-on .set-product-on .set-form-wrap .set-form-left > li input::placeholder {
+        font-size: 0.75rem
+    }
+}
+
+/* 해상도 1024px*/
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+
+    #product-on .set-product-on h4 span {
+        font-size: 0.75rem;
+}
+    #content .table-wrap .table-content1 .table-head {
+        padding: 5px;
+        font-weight: 500;
+        font-size: 0.75rem
+    }
+    
+    #content .table-wrap .table-content1 td{
+        font-size: 0.875rem;
+    }
+
+    #product-on .piece-product-on .form-wrap .form-left > li span {
+        font-size: 0.75rem;
+        width: 70px;
+    }
+
+    #product-on .piece-product-on .form-wrap .form-right > li span {
+        font-size: 0.75rem;
+        width: 60px;
+    }
+
+    #product-on .piece-product-on .form-wrap .form-left > li input {
+        width: 100px;
+    }
+
+    #product-on .piece-product-on .form-wrap .form-right > li input {
+        width: 65px;
+    }
+
+    #product-on .piece-product-on .form-wrap .form-left > li input::placeholder {
+        font-size: 0.625rem
+    }
+
+    #product-on .set-product-on .set-form-wrap .set-form-left > li span {
+        font-size: 0.75rem;
+        width: 70px;
+    }
+
+    #product-on .set-product-on .set-form-wrap .set-form-right > li span {
+        font-size: 0.75rem;
+        width: 60px;
+    }
+
+    #product-on .set-product-on .set-form-wrap .set-form-left > li input {
+        width: 100px
+    }
+
+    #product-on .set-product-on .set-form-wrap .set-form-right > li input {
+        width: 65px
+    }
+
+    #product-on .set-product-on .set-form-wrap .set-form-left > li input::placeholder {
+        font-size: 0.625rem
+    }
+
+    #product-on .set-table-wrap .table-content2 .table-head2 {
+        padding: 5px;
+        font-weight: 400;
+        font-size: 0.75rem
+    }
+
+    #product-on .set-table-wrap .table-content2 td {
+        padding: 5px;
+        font-size: 0.75rem
+            
+    }
+    #product-on .set-table-wrap .table-content2 th:nth-of-type(1) {
+    width: 25%
+}
+
+#product-on .set-table-wrap .table-content2 th:nth-of-type(2) {
+    width: 35%
+}
+}

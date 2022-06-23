@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/caaaa5d491.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <script src="./js/all.min.js"></script>
+    <link rel="stylesheet" href="./css/sulcommon.css">
+    <link rel="stylesheet" href="./css/sulreceipt.css">
+    <title>술오더-2</title>
+</head>
+
+<body>
+    <div id="skipNav">
+        <a href="#content">본문 바로가기</a>
+        <a href="#gnb">네비게이션바로가기</a>
+    </div>
+
+    <div id="wrap">
+        <div class="box"></div>
+        <header id="headerArea">
+            <div class="header-wrap">
+
+                <div class="logo-area">
+                    <h1>
+
+                        <span class="hidden">술오더</span>
+                        <!-- <img src="./images/logo_top_wh.png" alt="로고"> -->
+
+                    </h1>
+                </div>
+                <div class="toggle-menu">
+                    <a class="btn" href="#">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="bar-menu-box">
+                <nav id="gnb">
+                    <h2 class="hidden">글로벌네비게이션영역</h2>
+                    <ul class="mainMenu">
+                        <li class="depth1">
+                            <a href="#">주문하기</a>
+
+                            <ul>
+                                <li>
+                                    <a href="goOrderRequest.do">주류주문</a>
+                                </li>
+                                <li>
+                                    <a href="http://foodmarket.atude.co.kr">식자재주문</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="depth1">
+                            <a href="#">둘러보기</a>
+                            <ul>
+                                <li><a class="w3-bar-item w3-button w3-cell" href="http://atudemall.com">두근두근 한정특가몰</a>
+                                </li>
+                                <li><a class="w3-bar-item w3-button w3-cell" href="http://www.wcheck.co.kr">Wcheck</a>
+                                </li>
+                                <li><a class="w3-bar-item w3-button w3-cell"
+                                        href="http://www.atude.co.kr/sul_order/gate.asp?mode=health">건강검진</a></li>
+                                <li><a class="w3-bar-item w3-button w3-cell"
+                                        href="http://www.atude.co.kr/sul_order/insurance/insurance.asp">보험</a></li>
+                                <li><a class="w3-bar-item w3-button w3-cell"
+                                        href="http://www.atude.co.kr/sul_order/tax/tax.asp">세무회계</a></li>
+                                <li><a class="w3-bar-item w3-button w3-cell"
+                                        href="http://www.atude.co.kr/sul_order/rental/rental_list.asp">렌탈서비스</a></li>
+                                <!-- <li><a class="w3-bar-item w3-button w3-cell" href="#null" onclick="alert('준비중입니다.');">렌탈서비스</a></li> -->
+                                <li><a class="w3-bar-item w3-button w3-cell"
+                                        href="http://www.atude.co.kr/sul_order/law/law.asp">법률-상표권서비스</a></li>
+                                <!-- <li><a class="w3-bar-item w3-button w3-cell" href="#null" onclick="alert('준비중입니다.');">대출</a></li> -->
+                                <li><a class="w3-bar-item w3-button w3-cell"
+                                        href="http://www.apluslife.co.kr/newPage2/mobile/sulorder/sulorder01.html">라이프</a>
+                                </li>
+                                <li><a class="w3-bar-item w3-button w3-cell" href="modifyPasswordForm.do">비밀번호 변경</a>
+                                </li>
+                                <li><a class="w3-bar-item w3-button w3-cell" href="logout.do">로그아웃</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <a class="mclose" href=""><i class="fas fa-times" aria-hidden="true"></i></a>
+                </nav>
+            </div>
+        </header>
+
+        <article id="content">
+
+            <section id="order-user">
+                <h2>전자 주류 판매 계산서</h2>
+
+                <div class="order-user-header">
+                    <div class="receipt-img-box">
+                        <!-- <img src="./images/receipt.png" alt=""> -->
+                    </div>
+
+                    <ul class="receipt-inform1">
+                        <li>전표번호</li>
+                        <li>거래일자</li>
+                        <li>담당</li>
+                    </ul>
+                    <ul class="receipt-inform2">
+                        <li>2036</li>
+                        <li>2021-03-03</li>
+                        <li>곽대석</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <div class="provider-inform">
+                        <div class="provider-tab1">
+                            <a href="#">
+                                <span>삼정주판</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </a>
+                        </div>
+                        <div class="user-provider-wrap">
+                            <div class="user-provider">
+                                <ul class="provider-left">
+                                    <li>공급자</li>
+                                    <li>주소</li>
+                                    <li>대표자</li>
+                                    <li>사업자번호</li>
+                                </ul>
+                                <ul class="provider-right">
+                                    <li>&#40;주&#41; 삼정주판 </li>
+                                    <li>
+                                        <address class="ellipsis">경기 고양시 일산동구 백석2동 고양우편집중국</address>
+                                    </li>
+                                    <li>김천수</li>
+                                    <li>128-81-04720</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="purchaser-inform">
+                        <div class="purchaser-tab2">
+                            <a href="#"> 
+                                <span>멘지</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </a>
+                        </div>
+                        <div class="user-purchaser-wrap">
+                            <div class="user-purchaser">
+                                <ul class="purchaser-left">
+                                    <li>구입자</li>
+                                    <li>주소</li>
+                                    <li>대표자</li>
+                                    <li>사업자번호</li>
+                                </ul>
+                                <ul class="purchaser-right">
+                                    <li>멘지</li>
+                                    <li>
+                                        <address class="ellipsis">서울특별시 마포구 월드컵로 11길 8 1층 103호 &#40;망원동&#41;</address>
+                                    </li>
+                                    <li>유지선</li>
+                                    <li>530-45-00410</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section id="order-inform-amount">
+                <h2 class="hidden">주문정보와 총 합</h2>
+
+                <article id="order-inform">
+                    <h3 class="hidden">주문정보</h3>
+
+
+                    <div class="order-inform-wrap">
+                        <div class="order-inform-box">
+
+                            <ul class="order-receipt1">
+                                <li>하이트</li>
+                                <li>
+                                    <span>용도</span>
+                                    <span>용량</span>
+                                    465,268000
+                                </li>
+                            </ul>
+
+                            <div class="order-receipt2">
+                                <ul class="receipt-name1">
+                                    <li><span>공</span><span>공급가</span></li>
+                                    <li><span>수</span><span>수량</span></li>
+                                </ul>
+                                <ul class="receipt-content1">
+                                    <li>354,780</li>
+                                    <li>3/0</li>
+                                </ul>
+                                <ul class="receipt-name2">
+                                    <li><span>부</span><span>부가세</span></li>
+                                    <li><span>보</span><span>보증금</span></li>
+                                </ul>
+                                <ul class="receipt-content2">
+                                    <li>35,478</li>
+                                    <li>75,000</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="order-inform-box">
+
+                            <ul class="order-receipt1">
+                                <li>하이트</li>
+                                <li>
+                                    <span>용도</span>
+                                    <span>용량</span>
+                                    465,268000
+                                </li>
+                            </ul>
+
+                            <div class="order-receipt2">
+                                <ul class="receipt-name1">
+                                    <li><span>공</span><span>공급가</span></li>
+                                    <li><span>수</span><span>수량</span></li>
+                                </ul>
+                                <ul class="receipt-content1">
+                                    <li>354,780</li>
+                                    <li>3/0</li>
+                                </ul>
+                                <ul class="receipt-name2">
+                                    <li><span>부</span><span>부가세</span></li>
+                                    <li><span>보</span><span>보증금</span></li>
+                                </ul>
+                                <ul class="receipt-content2">
+                                    <li>35,478</li>
+                                    <li>75,000</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="order-inform-box">
+
+                            <ul class="order-receipt1">
+                                <li>하이트</li>
+                                <li>
+                                    <span>용도</span>
+                                    <span>용량</span>
+                                    465,268000
+                                </li>
+                            </ul>
+
+                            <div class="order-receipt2">
+                                <ul class="receipt-name1">
+                                    <li><span>공</span><span>공급가</span></li>
+                                    <li><span>수</span><span>수량</span></li>
+                                </ul>
+                                <ul class="receipt-content1">
+                                    <li>354,780</li>
+                                    <li>3/0</li>
+                                </ul>
+                                <ul class="receipt-name2">
+                                    <li><span>부</span><span>부가세</span></li>
+                                    <li><span>보</span><span>보증금</span></li>
+                                </ul>
+                                <ul class="receipt-content2">
+                                    <li>35,478</li>
+                                    <li>75,000</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="order-inform-box">
+
+                            <ul class="order-receipt1">
+                                <li>하이트</li>
+                                <li>
+                                    <span>용도</span>
+                                    <span>용량</span>
+                                    465,268000
+                                </li>
+                            </ul>
+
+                            <div class="order-receipt2">
+                                <ul class="receipt-name1">
+                                    <li><span>공</span><span>공급가</span></li>
+                                    <li><span>수</span><span>수량</span></li>
+                                </ul>
+                                <ul class="receipt-content1">
+                                    <li>354,780</li>
+                                    <li>3/0</li>
+                                </ul>
+                                <ul class="receipt-name2">
+                                    <li><span>부</span><span>부가세</span></li>
+                                    <li><span>보</span><span>보증금</span></li>
+                                </ul>
+                                <ul class="receipt-content2">
+                                    <li>35,478</li>
+                                    <li>75,000</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="order-inform-box">
+
+                            <ul class="order-receipt1">
+                                <li>하이트</li>
+                                <li>
+                                    <span>용도</span>
+                                    <span>용량</span>
+                                    465,268000
+                                </li>
+                            </ul>
+
+                            <div class="order-receipt2">
+                                <ul class="receipt-name1">
+                                    <li><span>공</span><span>공급가</span></li>
+                                    <li><span>수</span><span>수량</span></li>
+                                </ul>
+                                <ul class="receipt-content1">
+                                    <li>354,780</li>
+                                    <li>3/0</li>
+                                </ul>
+                                <ul class="receipt-name2">
+                                    <li><span>부</span><span>부가세</span></li>
+                                    <li><span>보</span><span>보증금</span></li>
+                                </ul>
+                                <ul class="receipt-content2">
+                                    <li>35,478</li>
+                                    <li>75,000</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="order-inform-box">
+
+                            <ul class="order-receipt1">
+                                <li>하이트</li>
+                                <li>
+                                    <span>용도</span>
+                                    <span>용량</span>
+                                    465,268000
+                                </li>
+                            </ul>
+
+                            <div class="order-receipt2">
+                                <ul class="receipt-name1">
+                                    <li><span>공</span><span>공급가</span></li>
+                                    <li><span>수</span><span>수량</span></li>
+                                </ul>
+                                <ul class="receipt-content1">
+                                    <li>354,780</li>
+                                    <li>3/0</li>
+                                </ul>
+                                <ul class="receipt-name2">
+                                    <li><span>부</span><span>부가세</span></li>
+                                    <li><span>보</span><span>보증금</span></li>
+                                </ul>
+                                <ul class="receipt-content2">
+                                    <li>35,478</li>
+                                    <li>75,000</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="order-inform-box">
+
+                            <ul class="order-receipt1">
+                                <li>하이트</li>
+                                <li>
+                                    <span>용도</span>
+                                    <span>용량</span>
+                                    465,268000
+                                </li>
+
+                            </ul>
+
+                            <div class="order-receipt2">
+                                <ul class="receipt-name1">
+                                    <li><span>공</span><span>공급가</span></li>
+                                    <li><span>수</span><span>수량</span></li>
+                                </ul>
+                                <ul class="receipt-content1">
+                                    <li>354,780</li>
+                                    <li>3/0</li>
+                                    <li>유흥</li>
+                                </ul>
+                                <ul class="receipt-name2">
+                                    <li><span>부</span><span>부가세</span></li>
+                                    <li><span>보</span><span>보증금</span></li>
+                                </ul>
+                                <ul class="receipt-content2">
+                                    <li>35,478</li>
+                                    <li>75,000</li>
+                                    <li>75,000</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="order-inform-box">
+
+                            <ul class="order-receipt1">
+                                <li>하이트</li>
+                                <li>
+                                    <span>용도</span>
+                                    <span>용량</span>
+                                    465,268000
+                                </li>
+                            </ul>
+
+                            <div class="order-receipt2">
+                                <ul class="receipt-name1">
+                                    <li><span>공</span><span>공급가</span></li>
+                                    <li><span>수</span><span>수량</span></li>
+                                </ul>
+                                <ul class="receipt-content1">
+                                    <li>354,780</li>
+                                    <li>3/0</li>
+                                </ul>
+                                <ul class="receipt-name2">
+                                    <li><span>부</span><span>부가세</span></li>
+                                    <li><span>보</span><span>보증금</span></li>
+                                </ul>
+                                <ul class="receipt-content2">
+                                    <li>35,478</li>
+                                    <li>75,000</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="order-inform-box">
+
+                            <ul class="order-receipt1">
+                                <li>하이트</li>
+                                <li>
+                                    <span>용도</span>
+                                    <span>용량</span>
+                                    465,268000
+                                </li>
+                            </ul>
+
+                            <div class="order-receipt2">
+                                <ul class="receipt-name1">
+                                    <li><span>공</span><span>공급가</span></li>
+                                    <li><span>수</span><span>수량</span></li>
+                                </ul>
+                                <ul class="receipt-content1">
+                                    <li>354,780</li>
+                                    <li>3/0</li>
+                                </ul>
+                                <ul class="receipt-name2">
+                                    <li><span>부</span><span>부가세</span></li>
+                                    <li><span>보</span><span>보증금</span></li>
+                                </ul>
+                                <ul class="receipt-content2">
+                                    <li>35,478</li>
+                                    <li>75,000</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="order-inform-box">
+
+                            <ul class="order-receipt1">
+                                <li>하이트</li>
+                                <li>
+                                    <span>용도</span>
+                                    <span>용량</span>
+                                    465,268000
+                                </li>
+                            </ul>
+
+                            <div class="order-receipt2">
+                                <ul class="receipt-name1">
+                                    <li><span>공</span><span>공급가</span></li>
+                                    <li><span>수</span><span>수량</span></li>
+                                </ul>
+                                <ul class="receipt-content1">
+                                    <li>354,780</li>
+                                    <li>3/0</li>
+                                </ul>
+                                <ul class="receipt-name2">
+                                    <li><span>부</span><span>부가세</span></li>
+                                    <li><span>보</span><span>보증금</span></li>
+                                </ul>
+                                <ul class="receipt-content2">
+                                    <li>35,478</li>
+                                    <li>75,000</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="order-inform-box">
+
+                            <ul class="order-receipt1">
+                                <li>하이트</li>
+                                <li>
+                                    <span>용도</span>
+                                    <span>용량</span>
+                                    465,268000
+                                </li>
+                            </ul>
+
+                            <div class="order-receipt2">
+                                <ul class="receipt-name1">
+                                    <li><span>공</span><span>공급가</span></li>
+                                    <li><span>수</span><span>수량</span></li>
+                                </ul>
+                                <ul class="receipt-content1">
+                                    <li>354,780</li>
+                                    <li>3/0</li>
+                                </ul>
+                                <ul class="receipt-name2">
+                                    <li><span>부</span><span>부가세</span></li>
+                                    <li><span>보</span><span>보증금</span></li>
+                                </ul>
+                                <ul class="receipt-content2">
+                                    <li>35,478</li>
+                                    <li>75,000</li>
+
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </article>
+
+                <article id="amount-section">
+                    <h3></h3>
+                    <div class="amount-wrap">
+                        <div class="amount-list">
+                            <ul class="amount-name1">
+                                <li>공급가</li>
+                                <li>부가세</li>
+                            </ul>
+
+                            <ul class="amount-content1">
+                                <li>354,780</li>
+                                <li>40,494</li>
+                            </ul>
+
+                            <ul class="amount-name2">
+                                <li>용기보증금</li>
+                                <li>공병보증금</li>
+                            </ul>
+
+                            <ul class="amount-content2">
+                                <li>60,000</li>
+                                <li>0</li>
+                            </ul>
+                        </div>
+                        <div class="amount-box">
+                            <ul class="amount-box-name">
+                                <li>소계 <span> &#40;공급가 &#43; 부가세&#41; </span></li>
+                                <li>합계</li>
+                            </ul>
+                            <ul class="amount-box-content">
+                                <li>445,434</li>
+                                <li>505,434</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+            </section>
+
+        </article>
+    </div>
+    <footer class="footerArea">
+        <div class="footer-box">
+            <p> &copy; sulorder </p>
+            <p>Icons made by <a href="https://www.flaticon.com/authors/google" title="Google">Google</a> from <a
+                    href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
+        </div>
+    </footer>
+
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="./js/nav.js"></script>
+    <script src="./js/slide-down.js"></script>
+
+
+
+</body>
+
+</html>

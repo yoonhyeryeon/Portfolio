@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 2;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+li {
+    list-style: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.bg-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.content-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    /* width: 600px;
+    height: 300px; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 10;
+    background-color: rgba(58,58,58,.5);
+}
+
+#clock.time-text {
+    font-size: 40px;
+    letter-spacing: -0.04em;
+}
+
+.inner-text {
+    margin-bottom: 30px;
+}
+
+#login-form input {
+    height: 34px;
+    padding: 5px 5px 0;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid rgba(255,255,255,.3);
+    font-size: 18px;
+    color: #FFf;
+    margin-bottom: 50px;
+    transition: border-bottom 300ms ease-in-out;
+}
+
+#login-form input::placeholder {
+    color: rgba(255,255,255,.5);
+    text-align: center;
+}
+
+
+#login-form input:focus {
+    border-bottom: 2px solid rgba(255,255,255,.8)
+}
+
+
+#login-form button,
+#logout-form button {
+    height: 38px;
+    padding: 5px 10px;
+    border-radius:15px ;
+    background-color: #93B5C6;
+    color: #fff;
+    font-weight: 700;
+    transition: background-color 300ms ease-in-out,
+    color 300ms ease-in-out;
+}
+
+#login-form button:hover,
+#logout-form button:hover {
+    background-color: rgba(147,181,198,.5);
+    color: rgba(255,255,255,.5);
+}
+
+#todo-form {
+    width: 40%;
+}
+
+#todo-form input {
+    width: 100%;
+    height: 34px;
+    padding: 0 10px;
+    background-color: transparent;
+    margin-bottom: 20px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgba(255,255,255,.3);
+    font-size: 16px;
+    color: #fff;
+    font-weight: 700;
+    transition: border-bottom 250ms ease-in-out;
+}
+
+#todo-form input::placeholder {
+    color: rgba(255,255,255,.5);
+    text-align: center;
+    font-weight: 700;
+}
+
+#todo-form input:hover,
+#todo-form input:focus {
+    border-bottom: 1px solid rgba(255,255,255,.8)
+}
+
+#todo-list {
+    margin-bottom: 20px;
+}
+
+#todo-list li {
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+}
+
+#todo-list li button {
+    margin-left: 10px;
+}
+
+#quote span{
+    display: block;
+    margin-top: 5px;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+}
+
+
+#logout-form  {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+.inner-text,
+.time-text {
+    color: #fff;
+}
+

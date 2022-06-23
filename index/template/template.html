@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>template</title>
+
+    <link rel="stylesheet" href="./css/all.min.css">
+    <script src="./js/all.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+    <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+    <link rel="stylesheet" href="./css/template-form.css">
+    <link rel="stylesheet" href="./css/template.css">
+    <link rel="stylesheet" href="./css/template1.css">
+
+    <!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+    <div id="wrap">
+        <article>
+            <h1>Template</h1>
+
+            <!-- button small -->
+
+            <section id="button-section">
+                <h2>Button</h2>
+
+
+                <div class="button-small-wrap section-wrap">
+                    <h3>Small Size Button</h3>
+                    <div class="button-small-box">
+                        <!-- 네모 버튼 small  -->
+                        <button class="btn-small button-square-small fs-10 px-p-3" type="button">
+                            Button
+                        </button>
+                        <!-- 둥근 모서리 버튼 small -->
+                        <button class="btn-small button-round-small fs-11 px-p-4" type="button">
+                            Button
+                        </button>
+                        <!-- 타원 버튼 small -->
+                        <button class="btn-small button-circle-small fs-12 px-p-5" type="button">
+                            Button
+                        </button>
+
+                        <!-- hover 효과 버튼 small -->
+                        <button class="btn-small button-sqhover-small" type="button">
+                            <span>
+                                Button
+                            </span>
+                        </button>
+                        <!-- border button small -->
+                        <button class="btn-small button-border-small fs-14 px-p-7" type="button">
+                            Button
+                        </button>
+                        <!-- gradient button small  -->
+                        <button class="btn-small button-gradient-small fs-14 px-p-8" type="button">
+                            Button
+                        </button>
+                        <!-- bradeint border button small -->
+                        <button class="btn-small button-gradient-border-small fs-14 px-p-9" type="button">
+                            Button
+                        </button>
+
+                    </div>
+                </div>
+
+
+                <div class="button-medium-wrap section-wrap">
+                    <h3>Medium Size Button</h3>
+                    <div class="button-medium-box">
+                        <!-- 네모 버튼 medium  -->
+                        <button class="btn_medium button-square-medium fs-15 px-p-14" type="button">
+                            Button
+                        </button>
+                        <!-- 둥근 모서리 버튼 medium -->
+                        <button class="btn_medium button-round-medium fs-16 px-p-15" type="button">
+                            Button
+                        </button>
+                        <!-- 타원 버튼 medium -->
+                        <button class="btn_medium button-circle-medium fs-17 px-p-16" type="button">
+                            Button
+                        </button>
+
+                        <!-- hover 효과 버튼 medium -->
+                        <button class="btn_medium button-sqhover-medium" type="button">
+                            <span>
+                                Button
+                            </span>
+                        </button>
+                        <!-- border button  medium -->
+                        <button class="btn_medium button-border-medium fs-19 px-p-18" type="button">
+                            Button
+                        </button>
+
+                        <!-- gradient button medium  -->
+                        <button class="btn_mdium button-gradient-medium fs-20 px-p-19" type="button">
+                            Button
+                        </button>
+
+                        <!-- bradeint border button medium -->
+                        <button class="btn_medium button-gradient-border-medium fs-21 px-p-20" type="button">
+                            Button
+                        </button>
+                    </div>
+                </div>
+
+
+                <div class="button-large-wrap section-wrap">
+                    <h3>Larege Size Button</h3>
+                    <div class="button-large-box">
+                        <!-- 네모 버튼 large  -->
+                        <button class="btn_large button-square-large fs-24 px-p-22" type="button">
+                            Button
+                        </button>
+                        <!-- 둥근 모서리 버튼 large -->
+                        <button class="btn_large button-round-large fs-24 px-p-23" type="button">
+                            Button
+                        </button>
+                        <!-- 타원 버튼 large -->
+                        <button class="btn_large button-circle-large fs-24 px-p-24" type="button">
+                            Button
+                        </button>
+
+                        <!-- hover 효과 버튼 large -->
+                        <button class="btn_large button-sqhover-large" type="button">
+                            <span>
+                                Button
+                            </span>
+                        </button>
+
+                        <!-- border button  large -->
+                        <button class="btn_large button-border-large fs-24 px-p-26" type="button">
+                            Button
+                        </button>
+
+                        <!-- gradient button large  -->
+                        <button class="btn_large button-gradient-large fs-24 px-p-27" type="button">
+                            Button
+                        </button>
+
+                        <!-- bradeint border button large -->
+                        <button class="btn_large button-gradient-border-large fs-24 px-p-28" type="button">
+                            Button
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="radio-section">
+                <h2>Radio Box</h2>
+                <div class="radio-wrap section-wrap">
+                    <h3>Radio Box</h3>
+                    <div class="radio-box">
+                        <div class="background-color">
+                            <h4> 1. radio-box background-color</h4>
+                            <!-- ie 작동안함 -->
+
+                            <input type="radio" id="radio_1st" name="bgColor" class="background-radio1">
+                            <label for="radio-sample1">radio-box1</label>
+
+
+                            <input type="radio" id="radio_2nd" name="bgColor" class="background-radio2">
+                            <label for="radio-sample1">radio-box2</label>
+                        </div>
+
+                        <div class="toggle">
+                            <h4> 2. radio-box icon</h4>
+                            <input type="radio" id="radio_4th" name="radio-sample4" class="icon-radio1">
+                            <label for="radio_4th" class="off">Angel.1</label>
+
+
+                            <input type="radio" id="radio_5th" name="radio-sample4" class="icon-radio2">
+                            <label for="radio_5th" class="off">Angel.2</label>
+
+                        </div>
+
+                        <div>
+                            <h4> 3.basic radio box </h4>
+
+                            <input type="radio" id="radio_6th" name="basic-radio" class="basic-radio">
+                        </div>
+
+                        <div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+
+            <!-- <section>
+                <div class="page">
+                    <ul class="pagination modal">
+                        <li><a href="#" class="first">처음페이지</a></li>
+                        <li><a href="#" class=" arrow left">-></a></li>
+                        <li><a href="#" class="active num">1</a></li>
+                        <li><a href="#" class="num">2</a></li>
+                        <li><a href="#" class="num">3</a></li>
+                        <li><a href="#" class="num">4</a></li>
+                        <li><a href="#" class="num">5</a></li>
+                        <li><a href="#" class="num">6</a></li>
+                        <li><a href="#" class="num">7</a></li>
+                        <li><a href="#" class="num">8</a></li>
+                        <li><a href="#" class="num">9</a></li>
+                        <li><a href="#" class="arrow right">-></a></li>
+                        <li><a href="#" class="last">끝페이지</a></li>
+                    </ul>
+
+                </div>
+            </section> -->
+
+
+
+            <section id="checkbox-section">
+                <h2>Check Box</h2>
+                <div class="check-wrap section-wrap">
+                    <h3>Check Box</h3>
+                    <div class="checkbox-box">
+                        <h4>1. check-box switch</h4>
+                        <input type="checkbox" id="switch-box" name="switch-box" class="switch-check">
+                        <label for="switch-box"><span></span></label>
+                        <span class="space"></span>
+
+                        <h4>2.check</h4>
+                        <div class="checks etrans">
+                            <input type="checkbox" id="ex_chk3">
+                            <label for="ex_chk3">체크박스</label>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="selectbox-section">
+                <h2>Select Box</h2>
+                <div class="selectbox-wrap section-wrap">
+                    <h3>select Box</h3>
+                    <div class="select-box-color">
+                        <h4>1. Select-box color</h4>
+                        <span class="arrow-area"></span>
+                        <select name="select_1st" id="select_1st" class="select-color fs-16">select1
+                            <option value="select_1st_1">선택하세요</option>
+                            <option value="select_1st_2">선택1</option>
+                            <option value="select_1st_3">선택2</option>
+                            <option value="select_1st_4">선택3</option>
+                            <option value="select_1st_5">선택4</option>
+                        </select>
+                        <span class="arrow-area"></span>
+                    </div>
+
+                    <div class="select-box-square">
+                        <h4>2. Select-box basic</h4>
+                        <select name="select_square" id="select_square" class="select-basic">select1
+                            <option class="select_1st_1" value="select_1st_1">선택하세요</option>
+                            <option value="select_1st_2">선택1</option>
+                            <option value="select_1st_3">선택2</option>
+                            <option value="select_1st_4">선택3</option>
+                            <option value="select_1st_5">선택4</option>
+                        </select>
+                    </div>
+
+                    <div class="select-box-ul">
+                        <h4>3. Select-box ul</h4>
+                        <div class="select-ul-wrap">
+                            <div class="select-header">
+                                <a href="javascript:void(0)">선택하세요.</a>
+                            </div>
+                            <ul class="select-body">
+                                <li>선택1</li>
+                                <li>선택2</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="select-box-border">
+                        <h4>4. Select-box border</h4>
+                        <div class="select-border-wrap">
+                            <div class="select-border-header">
+                                <span>- 분류 -</span>
+                                <a href="javascript:void(0)">선택하세요</a>
+                            </div>
+                            <ul class="select-border-body">
+                                <li>선택1</li>
+                                <li>선택2</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="select-box-top">
+                        <h4>5. Select-box top</h4>
+                        <div class="select-top-wrap">
+                            <div class="select-top-header">
+                                <span> 분류 </span>
+                                <a href="javascript:void(0)">선택하세요</a>
+                            </div>
+                            <ul class="select-top-body">
+                                <li>선택1</li>
+                                <li>선택2</li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+            </section>
+
+
+            <section id="modal-wrap">
+                <h2>modal</h2>
+                <div class="modal-box section-wrap">
+                    <div class="modal-basic">
+                        <span class="top-close-box">
+                            <i class="fas fa-times"></i>
+                        </span>
+                        <span class="content-box">
+
+                            <p>
+                                1. modal - sample
+
+                            </p>
+                        </span>
+                    </div>
+
+
+                    <div class="modal-square">
+                        <span class="square-close-box">
+                            <i class="fas fa-window-close"></i>
+                        </span>
+                        <span>
+                            <p>
+                                2. modal - sample
+
+                            </p>
+                        </span>
+                    </div>
+
+                </div>
+            </section>
+
+            <section id="tab-area">
+                <h2>tab</h2>
+                <div class="tab-basic section-wrap">
+                    <h3>tab</h3>
+                    <div class="tab-wrap">
+                        <h4>1. basic tab</h4>
+                        <ul class="tab-box">
+                            <li class="on" data-tab="tab-1">
+                                tab1
+                            </li>
+                            <li data-tab="tab-2">
+                                tab2
+                            </li>
+                            <li data-tab="tab-3">
+                                tab3
+                            </li>
+                        </ul>
+                        <div class="content-wrap">
+                            <div id="tab-1" class="content content1 on">
+                                탭1의내용
+                            </div>
+
+                            <div id="tab-2" class="content content2">
+                                탭2의내용
+                            </div>
+
+                            <div id="tab-3" class="content content3">
+                                탭3의내용
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 탭2 -->
+
+                    <div class="border-tab-wrap">
+                        <h4>2.border-tab</h4>
+                        <ul class="border-tab-box">
+                            <li class="on" data-tab="tab-1-1">
+                                tab1
+                            </li>
+                            <li data-tab="tab-2-1">
+                                tab2
+                            </li>
+                            <li data-tab="tab-3-1">
+                                tab3
+                            </li>
+                        </ul>
+                        <div class="border-content-wrap">
+                            <div id="tab-1-1" class="border-content content1 on">
+                                탭1의내용
+                            </div>
+
+                            <div id="tab-2-1" class="border-content content2">
+                                탭2의내용
+                            </div>
+
+                            <div id="tab-3-1" class="border-content content3">
+                                탭3의내용
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- 탭3 -->
+
+                    <div class="bottom-tab-wrap">
+                        <h4>3.border-bottom-tab</h4>
+                        <ul class="bottom-tab-box">
+                            <li class="on" data-tab="tab-1-2">
+                                tab1
+                            </li>
+                            <li data-tab="tab-2-2">
+                                tab2
+                            </li>
+                            <li data-tab="tab-3-2">
+                                tab3
+                            </li>
+                        </ul>
+                        <div class="bottom-content-wrap">
+                            <div id="tab-1-2" class="bottom-content content1 on">
+                                탭1의내용
+                            </div>
+
+                            <div id="tab-2-2" class="bottom-content content2">
+                                탭2의내용
+                            </div>
+
+                            <div id="tab-3-2" class="bottom-content content3">
+                                탭3의내용
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+    </div>
+    </section>
+
+    <!-- INPUT -->
+
+    <section id="input-area">
+        <h2>input</h2>
+        <div class="input-basic section-wrap">
+            <h3>input</h3>
+            <div class="input-wrap">
+
+                <h4>1. basic input</h4>
+                <div class="input-basic-wrap">
+                    <label for="">sample1</label>
+                    <input type="text" placeholder="sample1">
+                </div>
+
+                <h4>2.border input</h4>
+                <div class="input-border-wrap">
+                    <label for="">sample2</label>
+                    <input type="text" placeholder="border-sample">
+                </div>
+
+                <h4>3.box input</h4>
+                <div class="input-box-wrap">
+                    <label for="">sample2</label>
+                    <input type="text" placeholder="box-sample">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PAGINATION -->
+
+
+    <section id="pagination">
+
+        <h2>Pagination</h2>
+        <div class="page-basic section-wrap">
+            <h3>pagination</h3>
+            <div class="page-wrap">
+                <h4>1. basic pagination</h4>
+                <div class="basic-page-wrap">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <i class="fas fa-chevron-left"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                1
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                2
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                3
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                4
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                5
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fas fa-chevron-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <h4> box pagination </h4>
+                <div class="box-page-wrap">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <i class="fas fa-chevron-left"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                1
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                2
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                3
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                4
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                5
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fas fa-chevron-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <h4> color pagination </h4>
+                <div class="color-page-wrap">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <i class="fas fa-chevron-left"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                1
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                2
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                3
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                4
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                5
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fas fa-chevron-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- 테이블 -->
+
+    <section id="table">
+
+        <h2>table</h2>
+        <div class="table-basic section-wrap">
+            <h3>table</h3>
+            <div class="table-wrap">
+                <h4> 1. basic-table</h4>
+                <div class="basic-table-wrap">
+                    <table class="basic-table">
+                        <thead>
+                            <tr>
+                                <th>
+                                    header
+                                </th>
+                                <th>
+                                    header
+                                </th>
+                                <th>
+                                    header
+                                </th>
+                                <th>
+                                    header
+                                </th>
+                                <th>
+                                    header
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    content
+                                </td>
+                                <td>
+                                    content
+                                </td>
+                                <td>
+                                    content
+                                </td>
+                                <td>
+                                    content
+                                </td>
+                                <td>
+                                    content
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    content
+                                </td>
+                                <td>
+                                    content
+                                </td>
+                                <td>
+                                    content
+                                </td>
+                                <td>
+                                    content
+                                </td>
+                                <td>
+                                    content
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    content
+                                </td>
+                                <td>
+                                    content
+                                </td>
+                                <td>
+                                    content
+                                </td>
+                                <td>
+                                    content
+                                </td>
+                                <td>
+                                    content
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    content
+                                </td>
+                                <td>
+                                    content
+                                </td>
+                                <td>
+                                    content
+                                </td>
+                                <td>
+                                    content
+                                </td>
+                                <td>
+                                    content
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    content
+                                </td>
+                                <td>
+                                    content
+                                </td>
+                                <td>
+                                    content
+                                </td>
+                                <td>
+                                    content
+                                </td>
+                                <td>
+                                    content
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    content
+                                </td>
+                                <td>
+                                    content
+                                </td>
+                                <td>
+                                    content
+                                </td>
+                                <td>
+                                    content
+                                </td>
+                                <td>
+                                    content
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    content
+                                </td>
+                                <td>
+                                    content
+                                </td>
+                                <td>
+                                    content
+                                </td>
+                                <td>
+                                    content
+                                </td>
+                                <td>
+                                    content
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h4> 2. round-table</h4>
+                <div>
+                    <table></table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    </article>
+
+    </div>
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="./js/checked.js"></script>
+
+
+
+
+
+
+</body>
+
+</html>

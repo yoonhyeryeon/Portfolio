@@ -1,0 +1,1524 @@
+#button-section .button-small-box,
+#button-section .button-medium-box,
+#button-section .button-large-box {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+button {
+    margin-right: 15px;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+
+/* 네모 버튼 small */
+
+.button-square-small {
+    display: inline-block;
+    max-width: 100%;
+    background: rgb(131, 155, 151);
+    border: 0.5px solid #839b97;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    font-size: 0.75rem;
+    padding: 0.25rem;
+    box-shadow: 2px 2px 4px 1px rgba(35, 61, 57, .1);
+}
+
+.button-square-small:hover {
+    background-color: rgba(85, 110, 106, 04);
+}
+
+
+/* 둥근 모서리 버튼 small */
+
+.button-round-small {
+    display: inline-block;
+    max-width: 100%;
+    background: rgb(131, 155, 151);
+    border: 0.5px solid #839b97;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    font-size: 0.75rem;
+    padding: 0.25rem;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px 2px rgba(35, 61, 57, .1);
+}
+
+.button-round-small:hover {
+    background-color: rgba(85, 110, 106, 04);
+}
+
+
+/* 타원버튼 small */
+
+.button-circle-small {
+    display: inline-block;
+    max-width: 100%;
+    background: rgb(131, 155, 151);
+    border: 0.5px solid #839b97;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    font-size: 0.75rem;
+    padding: 0.313rem;
+    border-radius: 100px;
+    box-shadow: 2px 2px 3px 2px rgba(35, 61, 57, .1);
+}
+
+.button-circle-small:hover {
+    background-color: rgba(85, 110, 106, 04);
+}
+
+/* hover 효과 small */
+
+.button-sqhover-small {
+    display: inline-block;
+    width: 70px;
+    height: 35px;
+    font-size: 0.75rem;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    color: #999;
+    border: 0.5px solid #839b97;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+    background: transparent;
+    box-shadow: 1px 1px 2px 1px rgba(35, 61, 57, .1);
+}
+
+.button-sqhover-small span {
+    position: relative;
+    z-index: 2;
+}
+
+.button-sqhover-small:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #839b97;
+    transition: all .35s;
+}
+
+.button-sqhover-small:hover {
+    color: #fff;
+}
+
+.button-sqhover-small:hover:after {
+    width: 100%;
+}
+
+/* border button small */
+
+.button-border-small {
+    display: inline-block;
+    max-width: 100%;
+    background: transparent;
+    border: 0.5px solid #839b97;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    font-size: 0.75rem;
+    padding: 0.313rem;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px 2px rgba(35, 61, 57, .1);
+}
+
+.button-border-small:hover {
+    background-color: #839b97;
+    color: #fff;
+}
+
+/* gradient button small */
+
+.button-gradient-small {
+    display: inline-block;
+    max-width: 100%;
+    background: #355C7D;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #9a8194, #839b97);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #9a8194, #839b97);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    font-size: 0.75rem;
+    padding: 0.313;
+    border-style: none;
+    border-radius: 5px;
+}
+
+.button-gradient-small:hover {
+    background: #C6A9A3;
+}
+
+
+
+/* 테두리 그라디언트 버튼 small */
+
+.button-gradient-border-small {
+    display: inline-block;
+    max-width: 100%;
+    /* box-sizing: border-box; */
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    font-size: 0.75rem;
+    padding:0.313rem;
+    border: 3px solid;
+    border-image-slice: 1;
+    background: transparent;
+    overflow: hidden;
+    position: relative;
+}
+
+.button-gradient-border-small {
+    border-image-source: linear-gradient(to left, #9a8194, #839b97);
+}
+
+
+/*  그라디언트 보더 호버효과  */
+.button-gradient-border-small:after {
+    position: absolute;
+    content: '';
+    top: -50px;
+    left: -50px;
+    width: 35px;
+    height: 150px;
+    background: #fff;
+    -webkit-transform: rotate(25deg);
+    transform: rotate(25deg);
+    -webkit-transition: all 2000ms cubic-bezier(0.23, 1, 0.32, 1);
+    transition: all 2000ms cubic-bezier(0.23, 1, 0.32, 1);
+    opacity: 0;
+}
+
+.button-gradient-border-small:hover:after {
+    left: calc(100% + 50px);
+    opacity: 1;
+}
+
+
+
+
+/* medium button */
+
+
+/* 네모 버튼 medium */
+
+.button-square-medium {
+    display: inline-block;
+    max-width: 100%;
+    background: rgb(131, 155, 151);
+    border: 0.5px solid #839b97;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    font-size: 0.875rem;
+    padding: 0.625rem 1.125rem;
+    box-shadow: 2px 2px 3px 2px rgba(35, 61, 57, .1);
+}
+
+.button-square-medium:hover {
+    background-color: rgba(85, 110, 106, 04);
+}
+
+/* 둥근 모서리 버튼 medium */
+
+.button-round-medium {
+    display: inline-block;
+    max-width: 100%;
+    background: rgb(131, 155, 151);
+    border: 0.5px solid #839b97;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    font-size: 0.875rem;
+    padding: 0.625rem 1.125rem;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px 2px rgba(35, 61, 57, .1);
+}
+
+.button-round-medium:hover {
+    background-color: rgba(85, 110, 106, 04);
+}
+
+
+/* 타원버튼 medium */
+
+.button-circle-medium {
+    display: inline-block;
+    max-width: 100%;
+    background: rgb(131, 155, 151);
+    border: 0.5px solid #839b97;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    font-size: 0.875rem;
+    padding: 0.625rem 1.125rem;
+    border-radius: 100px;
+    box-shadow: 2px 2px 3px 2px rgba(35, 61, 57, .1);
+}
+
+.button-circle-medium:hover {
+    background-color: rgba(85, 110, 106, 04);
+}
+
+
+/* hover 효과 medium */
+
+.button-sqhover-medium {
+    display: inline-block;
+    width: 100px;
+    height: 45px;
+    font-size: 0.875rem;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    color: #999;
+    border: 0.5px solid #839b97;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+    background: transparent;
+    box-shadow: 1px 1px 2px 1px rgba(35, 61, 57, .1);
+}
+
+.button-sqhover-medium span {
+    position: relative;
+    z-index: 2;
+}
+
+.button-sqhover-medium:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #839b97;
+    transition: all .35s;
+}
+
+.button-sqhover-medium:hover {
+    color: #fff;
+}
+
+.button-sqhover-medium:hover:after {
+    width: 100%;
+}
+
+/* border button medium */
+
+.button-border-medium {
+    display: inline-block;
+    max-width: 100%;
+    background: transparent;
+    border: 1px solid #839b97;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    font-size: 0.875rem;
+    padding: 0.625rem 1.125rem;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px 2px rgba(35, 61, 57, .1);
+}
+
+.button-border-medium:hover {
+    background-color: #839b97;
+    color: #fff;
+}
+
+.button-gradient-medium {
+    display: inline-block;
+    max-width: 100%;
+    background: #355C7D;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #9a8194, #839b97);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #9a8194, #839b97);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    font-size: 1rem;
+    padding: 0.625rem 1.125rem;
+    border-style: none;
+    border-radius: 5px;
+}
+
+.button-gradient-medium:hover {
+    background: #C6A9A3;
+}
+
+
+/* 테두리 그라디언트 버튼 medium */
+
+.button-gradient-border-medium {
+    display: inline-block;
+    max-width: 100%;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0.625rem 1.125rem;
+    border: 6px solid;
+    border-image-slice: 1;
+    background: transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.button-gradient-border-medium {
+    border-image-source: linear-gradient(to left, #9a8194, #839b97);
+}
+
+/*  그라디언트 보더 호버효과  */
+.button-gradient-border-medium:after {
+    position: absolute;
+    content: '';
+    top: -50px;
+    left: -50px;
+    width: 35px;
+    height: 150px;
+    background: #fff;
+    -webkit-transform: rotate(25deg);
+    transform: rotate(25deg);
+    -webkit-transition: all 2000ms cubic-bezier(0.23, 1, 0.32, 1);
+    transition: all 2000ms cubic-bezier(0.23, 1, 0.32, 1);
+    opacity: 0;
+}
+
+.button-gradient-border-medium:hover:after {
+    left: calc(100% + 50px);
+    opacity: 1;
+}
+
+
+
+/* large button  */
+
+/* 네모 버튼 large */
+
+.button-square-large {
+    display: inline-block;
+    max-width: 100%;
+    background: rgb(131, 155, 151);
+    border: 0.5px solid #839b97;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    font-size: 1rem;
+    padding: 0.625rem 2rem;
+    box-shadow: 2px 2px 3px 2px rgba(35, 61, 57, .1);
+}
+
+.button-square-large:hover {
+    background-color: rgba(85, 110, 106, 04);
+}
+
+/* 둥근 모서리 버튼 large */
+
+.button-round-large {
+    display: inline-block;
+    max-width: 100%;
+    background: rgb(131, 155, 151);
+    border: 0.5px solid #839b97;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    font-size: 1rem;
+    padding: 0.625rem 2rem;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px 2px rgba(35, 61, 57, .1);
+}
+
+.button-round-large:hover {
+    background-color: rgba(85, 110, 106, 04);
+}
+
+
+/* 타원버튼 large */
+
+.button-circle-large {
+    display: inline-block;
+    max-width: 100%;
+    background: rgb(131, 155, 151);
+    border: 0.5px solid #839b97;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    font-size: 1rem;
+    padding: 0.625rem 2rem;
+    border-radius: 100px;
+    box-shadow: 2px 2px 3px 2px rgba(35, 61, 57, .1);
+}
+
+.button-circle-large:hover {
+    background-color: rgba(85, 110, 106, 04);
+}
+
+
+/* hover 효과 large */
+
+.button-sqhover-large {
+    display: inline-block;
+    width: 120px;
+    height: 60px;
+    font-size: 1.125rem;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    color: #999;
+    border: 0.5px solid #839b97;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+    background: transparent;
+    box-shadow: 1px 1px 2px 1px rgba(35, 61, 57, .1);
+}
+
+.button-sqhover-large span {
+    position: relative;
+    z-index: 2;
+}
+
+.button-sqhover-large:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #839b97;
+    transition: all .35s;
+}
+
+.button-sqhover-large:hover {
+    color: #fff;
+}
+
+.button-sqhover-large:hover:after {
+    width: 100%;
+}
+
+/* border button large*/
+
+.button-border-large {
+    display: inline-block;
+    max-width: 100%;
+    background: transparent;
+    border: 1px solid #839b97;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    font-size: 1rem;
+    padding: 0.625rem 2rem;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px 2px rgba(35, 61, 57, .1);
+}
+
+.button-border-large:hover {
+    background-color: #839b97;
+    color: #fff;
+}
+
+/* gradient button large */
+
+.button-gradient-large {
+    display: inline-block;
+    max-width: 100%;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #9a8194, #839b97);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #9a8194, #839b97);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    font-size: 1rem;
+    padding: 0.625rem 2rem;
+    border-style: none;
+    border-radius: 5px;
+}
+
+.button-gradient-large:hover {
+    background: #C6A9A3;
+}
+
+/* 테두리 그라디언트 버튼 라지 */
+
+.button-gradient-border-large {
+    display: inline-block;
+    max-width: 100%;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.625rem 2rem;
+    border: 10px solid;
+    border-image-slice: 1;
+    background: transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.button-gradient-border-large {
+    border-image-source: linear-gradient(to left, #9a8194, #839b97);
+}
+
+/*  그라디언트 보더 호버효과  */
+.button-gradient-border-large:after {
+    position: absolute;
+    content: '';
+    top: -50px;
+    left: -50px;
+    width: 35px;
+    height: 150px;
+    background: #fff;
+    -webkit-transform: rotate(25deg);
+    transform: rotate(25deg);
+    -webkit-transition: all 2000ms cubic-bezier(0.23, 1, 0.32, 1);
+    transition: all 2000ms cubic-bezier(0.23, 1, 0.32, 1);
+    opacity: 0;
+}
+
+.button-gradient-border-large:hover:after {
+    left: calc(100% + 50px);
+    opacity: 1;
+}
+
+
+/* 라디오 박스 */
+
+
+/* 1. 라디오 박스 백그라운드 컬러  */
+
+.background-color {
+    margin-bottom: 10px;
+}
+
+
+
+.background-color input[id='radio_1st'] {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    outline: none;
+    border: 2px solid #ccc;
+    padding: 2px;
+    margin-left: 30px;
+    /* Control the space between border and background */
+}
+
+.background-color input[id="radio_1st"]:checked {
+    border-color: #440a67;
+    background: #b4aee8 content-box;
+    transition: all .35s;
+    /* Don't color the padding area */
+}
+
+
+
+
+.background-color input[id='radio_2nd'] {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    outline: none;
+    border: 2px solid #ccc;
+    padding: 2px;
+    /* Control the space between border and background */
+}
+
+.background-color input[id="radio_2nd"]:checked {
+    border-color: #28527a;
+    background: #f4d160 content-box;
+    transition: all .35s;
+    /* Don't color the padding area */
+}
+
+
+
+/* 2. 라디오박스 아이콘 */
+.toggle label {
+    display: inline-block;
+    font-size: 12px;
+    text-align: center;
+    margin-left: 20px;
+}
+
+
+.toggle input[id="radio_4th"]+label:before {
+    content: url(../image/angel-off.png);
+    display: block;
+    font-family: "Font Awesome 5 Free";
+    margin-right: 3px;
+    font-size: 1.875rem;
+}
+
+.toggle input[id="radio_4th"]:checked+label:before {
+    content: url(../image/angel-on.png);
+    display: block;
+    font-family: "Font Awesome 5 Free";
+    font-size: 1.875rem;
+}
+
+.toggle input[id="radio_4th"] {
+    display: none;
+}
+
+
+
+.toggle input[id="radio_5th"]+label:before {
+    content: url(../image/angel2-off.png);
+    display: block;
+    font-family: "Font Awesome 5 Free";
+    margin-right: 5px;
+    font-size: 1.875rem;
+}
+
+.toggle input[id="radio_5th"]:checked+label:before {
+    content: url(../image/angel2-on.png);
+    display: block;
+    font-family: "Font Awesome 5 Free";
+    font-size: 1.875rem;
+}
+
+.toggle input[id="radio_5th"] {
+    display: none;
+}
+
+
+/* 라디오 박스 베이직 */
+
+/*radio 버튼 색상변경 */
+
+
+input[id='radio_6th'] {
+    -webkit-appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #839b97;
+    border-radius: 50%;
+    outline: none;
+    background: #fff;
+    margin-left: 30px;
+}
+
+input[id='radio_6th']:before {
+    content: '';
+    display: block;
+    width: 60%;
+    height: 60%;
+    margin: 20% auto;
+    border-radius: 50%;
+}
+
+input[id='radio_6th']:checked:before {
+    background: #839b97;
+}
+
+
+
+
+
+/* 체크박스 */
+
+/* 2. 라디오박스 스위치 */
+
+.check-wrap {
+    position: relative;
+}
+
+.checkbox-box .space:after {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 30px;
+}
+
+
+.checkbox-box input[id="switch-box"] {
+    position: absolute;
+    visibility: hidden;
+}
+
+.checkbox-box>label {
+    display: block;
+    position: absolute;
+    width: 60px;
+    height: 34px;
+    border-radius: 17px;
+    background-color: #ddd;
+    transition-duration: 0.2s;
+    margin-left: 20px;
+}
+
+.checkbox-box>label span {
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    z-index: 1;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition-duration: 0.2s;
+}
+
+.checkbox-box>label:before,
+.checkbox-box>label:after {
+    position: absolute;
+    top: 0;
+    width: 34px;
+    font-size: 11px;
+    line-height: 34px;
+    text-align: center;
+}
+
+.checkbox-box>label:before {
+    left: 0;
+    content: 'ON';
+    color: #fff;
+}
+
+.checkbox-box>label:after {
+    right: 0;
+    content: 'OFF';
+    color: #333;
+}
+
+.checkbox-box .switch-check:checked+label {
+    background-color: #839b97;
+}
+
+.checkbox-box .switch-check:checked+label span {
+    /* left: 29px; */
+    transform: translateX(26px);
+}
+
+
+
+/* 박스가 체크표시로 바뀌는 체크박스 */
+
+.checks {position: relative;}
+
+.checks input[type="checkbox"] {  /* 실제 체크박스는 화면에서 숨김 */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip:rect(0,0,0,0);
+  border: 0
+}
+.checks input[type="checkbox"] + label {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+.checks input[type="checkbox"] + label:before {  /* 가짜 체크박스 */
+  content: ' ';
+  display: inline-block;
+  width: 21px;  /* 체크박스의 너비를 지정 */
+  height: 21px;  /* 체크박스의 높이를 지정 */
+  line-height: 21px; /* 세로정렬을 위해 높이값과 일치 */
+  margin: -2px 8px 0 0;
+  text-align: center; 
+  vertical-align: middle;
+  background: #fafafa;
+  border: 1px solid #cacece;
+  border-radius : 3px;
+  box-shadow: 0px 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+}
+.checks input[type="checkbox"] + label:active:before,
+.checks input[type="checkbox"]:checked + label:active:before {
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+.checks input[type="checkbox"]:checked + label:before {  /* 체크박스를 체크했을때 */ 
+  content: '\2714';  /* 체크표시 유니코드 사용 */
+  color: #99a1a7;
+  text-shadow: 1px 1px #fff;
+  background: #e9ecee;
+  border-color: #adb8c0;
+  box-shadow: 0px 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+}
+
+.checks.small input[type="checkbox"] + label {
+  font-size: 12px;
+}
+
+.checks.small input[type="checkbox"] + label:before {
+  width: 17px;
+  height: 17px;
+  line-height: 17px;
+  font-size: 11px;
+}
+
+.checks.etrans input[type="checkbox"] + label {
+  padding-left: 30px;
+}
+.checks.etrans input[type="checkbox"] + label:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-top: 0;
+  opacity: .6;
+  box-shadow: none;
+  border-color: #6cc0e5;
+  -webkit-transition: all .12s, border-color .08s;
+  transition: all .12s, border-color .08s;
+}
+
+.checks.etrans input[type="checkbox"]:checked + label:before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  top: -5px;
+  left: 5px;
+  border-radius: 0;
+  opacity:1; 
+  background: transparent;
+  border-color:transparent #6cc0e5 #6cc0e5 transparent;
+  border-top-color:transparent;
+  border-left-color:transparent;
+  -ms-transform:rotate(45deg);
+  -webkit-transform:rotate(45deg);
+  transform:rotate(45deg);
+}
+
+.no-csstransforms .checks.etrans input[type="checkbox"]:checked + label:before {
+  /*content:"\2713";*/
+  content: "\2714";
+  top: 0;
+  left: 0;
+  width: 21px;
+  line-height: 21px;
+  color: #6cc0e5;
+  text-align: center;
+  border: 1px solid #6cc0e5;
+}
+
+/* select box */
+
+select::-ms-expand {
+    display: none
+}
+
+#selectbox-section .select-box-color {
+    position: relative;
+}
+
+#selectbox-section .select-color {
+    width: 250px;
+    border: none;
+    height: 50px;
+    background-color: #839b97;
+    outline: none;
+    padding: 0 20px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    color: #fff;
+    font-size: 1rem;
+    background-image: url(../image/arrow.png);
+    background-repeat: no-repeat;
+    background-position: 216px;
+}
+
+#selectbox-section .select-color option {
+    height: 30px;
+    outline: none;
+}
+
+/* 2번째 */
+
+#selectbox-section .select-box-square {
+    margin-top: 30px;
+}
+
+#selectbox-section .select-basic {
+    outline: none;
+    width: 250px;
+    height: 50px;
+    border: 1px solid #839b97;
+    background: url(../image/arrowccc.png) no-repeat 95% 50%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding-left: 10px;
+}
+
+
+
+/*  셀렉트박스 ul  */
+
+.select-ul-wrap {
+    position: relative;
+}
+
+.select-box-ul .select-header {
+    background-color: #839b97;
+    width: 264px;
+    padding: 10px 0 15px;
+    border-radius: 15px;
+    background-image: url(../image/arowwh.png);
+    background-repeat: no-repeat;
+    background-position: 185px;
+    text-align: center;
+}
+
+.select-box-ul .select-header a {
+    color: #fff;
+    display: block;
+}
+
+.select-box-ul .select-body {
+    position: absolute;
+    top: 34px;
+    left: 0;
+    width: 264px;
+    background-color: #839b97;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    text-align: center;
+    display: none;
+}
+
+
+.active {
+    display: block;
+}
+
+.select-box-ul .select-body li {
+    padding: 5px 0;
+    color: #fff;
+}
+
+.select-box-ul .select-body li:nth-of-type(1):hover {
+    background-color: rgba(255, 255, 255, .3)
+}
+
+.select-box-ul .select-body li:nth-of-type(2):hover {
+    background-color: rgba(255, 255, 255, .3)
+}
+
+.select-box-ul .select-header span {
+    color: #fff;
+}
+
+
+/* 밑줄 셀렉트박스 */
+
+.select-border-header {
+    background-color: rgba(131, 155, 151, .6);
+    width: 250px;
+    padding: 25px 0 10px 7px;
+    background-image: url(../image/fat-arrow.png);
+    background-repeat: no-repeat;
+    background-position: 220px;
+    text-align: left;
+    border-bottom: 3px solid #839b97;
+    position: relative;
+}
+
+.select-border-header span {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    font-size: 0.75rem;
+}
+
+.select-border-header a {
+    color: #fff;
+    display: block;
+}
+
+.select-border-body {
+    border: 1px solid #839b97;
+    width: 250px;
+    text-align: left;
+    display: none;
+}
+
+.select-border-body li {
+    padding: 10px 0 10px 7px;
+    border-bottom: 1px dashed #839b97;
+}
+
+.select-border-body li:last-child {
+    border-bottom: none;
+}
+
+.select-border-body li:hover {
+    background-color: rgba(131, 155, 151, .3);
+}
+
+
+
+/*  셀렉트박스 탑  */
+
+.select-top-wrap {
+    position: relative;
+}
+
+.select-top-header {
+    background-color: #fff;
+    width: 250px;
+    padding: 10px 7px;
+    background-image: url(../image/fat-arrow-black.png);
+    background-repeat: no-repeat;
+    background-position: 220px;
+    text-align: left;
+    border: 1px solid #839b97;
+    border-radius: 15px;
+    position: relative;
+
+}
+
+.select-top-header span {
+    position: absolute;
+    top: -10px;
+    left: 15px;
+    font-size: 0.75rem;
+    background-color: #fff;
+    padding: 0 5px;
+}
+
+.select-top-header a {
+    color: #333;
+    display: block;
+}
+
+.select-top-body {
+    border: 1px solid #839b97;
+    width: 250px;
+    text-align: left;
+    background-color: #fff;
+    position: absolute;
+    top: -11px;
+    display: none;
+}
+
+.select-top-body li {
+    padding: 10px 0 10px 7px;
+    border-bottom: 1px dashed #839b97;
+
+}
+
+.select-top-body li:last-child {
+    border-bottom: none;
+}
+
+.select-top-body li:hover {
+    background-color: rgba(131, 155, 151, .3);
+}
+
+
+
+/* 모달창 섹션 */
+
+.modal-box {
+    display: flex;
+}
+
+
+/* 라운드 모달창 */
+
+#modal-wrap .modal-box .modal-basic {
+    width: 400px;
+    height: 400px;
+    border: 1px solid #839b97;
+    border-radius: 15px;
+    background-color: #839b97;
+}
+
+#modal-wrap {
+    margin-top: 50px;
+}
+
+#modal-wrap .modal-box .modal-basic {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+#modal-wrap .modal-box .modal-basic .top-close-box {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+
+#modal-wrap .modal-box .modal-basic .top-close-box::before {
+    content: 'Title';
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: -340px;
+    color: #fff;
+
+}
+
+#modal-wrap .modal-box .modal-basic .top-close-box .fa-times {
+    color: #fff;
+    font-size: 25px;
+}
+
+#modal-wrap .modal-box .modal-basic .content-box {
+    background-color: #fff;
+    display: inline-block;
+    width: 90%;
+    height: 300px;
+    margin-top: 70px;
+}
+
+#modal-wrap .modal-box .modal-basic .content-box:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 340px;
+    height: 1px;
+    background-color: #fff;
+}
+
+#modal-wrap .modal-box .modal-basic p {
+    padding: 20px;
+}
+
+/* 네모 모달창 */
+
+#modal-wrap .modal-box .modal-square {
+    width: 400px;
+    height: 400px;
+    border: 1px solid #839b97;
+    margin-left: 30px;
+    position: relative;
+}
+
+#modal-wrap {
+    margin-top: 50px;
+}
+
+#modal-wrap .modal-box .modal-square .square-close-box {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background-color: #839b97;
+    border-bottom: 1px solid #839b97;
+    justify-content: flex-end;
+}
+
+#modal-wrap .modal-box .modal-square .square-close-box::before {
+    content: 'Title';
+    display: block;
+    top: 13px;
+    left: 15px;
+    color: #fff;
+    position: absolute;
+}
+
+#modal-wrap .modal-box .modal-square .fa-window-close {
+    margin: 10px;
+    font-size: 25px;
+    color: #fff;
+}
+
+#modal-wrap .modal-box .modal-square p {
+    padding: 20px;
+}
+
+/* tab */
+
+/* 1.tab */
+
+.tab-box {
+    display: flex;
+}
+
+.tab-box li {
+    background-color: #839b97;
+    padding: 15px 20px;
+    color: #fff;
+    margin-right: 5px;
+}
+
+.tab-box li.on,
+.tab-box li:hover {
+    background-color: #9a8194;
+    cursor:pointer;
+}
+
+.content-wrap {
+    border: 1px solid #839b97;
+    width: 50%;
+}
+
+.content-wrap .content {
+    display: none;
+    padding: 20px;
+}
+
+.content-wrap .on {
+    display: block;
+}
+
+/* 2.tab */
+
+.border-tab-box {
+    display: flex;
+    border-bottom: 1px solid #839b97;
+    width: 50%;
+}
+
+.border-tab-box li {
+    border-width: 1px;
+    border-color: #839b97 #839b97 #fff;
+    border-style: solid;
+    padding: 15px 20px;
+    margin-right: 5px;
+}
+
+.border-tab-box li.on,
+.border-tab-box li:hover {
+    border-color: #839b97 #839b97 #fff;
+    margin-bottom: -1px;
+    cursor: pointer;
+}
+
+.border-tab-box li.on {
+    color: #839b97;
+}
+
+.border-content-wrap {
+    background-color: #fff;
+    width: 50%;
+    /* border: 1px solid #839b97;
+    border-top: none; */
+}
+
+
+.border-content-wrap .border-content {
+    display: none;
+    padding: 20px;
+}
+
+.border-content-wrap div.on {
+    display: block;
+
+}
+
+
+/* 탭3 */
+
+
+.bottom-tab-box {
+    display: flex;
+}
+
+.bottom-tab-box li {
+    border-bottom: 3px solid #839b97;
+    padding: 15px 20px;
+    margin-right: 5px;
+}
+
+.bottom-tab-box li.on,
+.bottom-tab-box li:hover {
+    border-color: #9a8194;
+    cursor: pointer;
+}
+
+.bottom-tab-box li.on {
+    color: #9a8194;
+}
+
+.bottom-content-wrap {
+    background-color: #fff;
+    width: 50%;
+}
+
+
+.bottom-content-wrap .bottom-content {
+    display: none;
+    padding: 20px;
+}
+
+.bottom-content-wrap div.on {
+    display: block;
+}
+
+
+/* input */
+
+/* basic input */
+
+#input-area .input-basic-wrap label {
+    color: #fff;
+    background-color: #839b97;
+    padding: 5px 5px 6px;
+}
+
+#input-area .input-basic-wrap input {
+    border: 1px solid #839b97;
+    padding: 6px;
+    margin-left: -8px;
+    font-size: 1rem;
+}
+
+/* border input */
+
+#input-area .input-border-wrap {
+    position: relative;
+}
+
+#input-area .input-border-wrap input {
+    border: none;
+    border-bottom: 2px solid #839b97;
+    padding-top: 10px;
+    font-size: 1rem;
+}
+
+#input-area .input-border-wrap label {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    font-size: 0.75rem;
+    color: #999;
+}
+
+/* box input */
+
+#input-area .input-box-wrap {
+    position: relative;
+}
+
+#input-area .input-box-wrap input {
+    width: 300px;
+    background-color: rgba(131, 155, 151, .4);
+    border: none;
+    border-bottom: 3px solid #839b97;
+    height: 50px;
+    font-size: 1rem;
+    padding-left: 10px;
+}
+
+#input-area .input-box-wrap label {
+    position: absolute;
+    top: -16px;
+    left: 0;
+    font-size: 0.75rem;
+    color: #999;
+}
+
+
+/* pagination */
+
+#pagination a {
+    display: block;
+}
+
+/* basic pagination */
+
+#pagination .page-wrap .basic-page-wrap {
+    width: 300px;
+}
+
+#pagination .page-wrap .basic-page-wrap > ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+#pagination .page-wrap .basic-page-wrap > ul li a{
+    padding: 4px 0 0 9px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+#pagination .page-wrap .basic-page-wrap > ul li a:hover {
+    background-color: rgba(131, 155, 151, .8);
+    color: #fff;
+}
+
+
+/* box pagination */
+
+#pagination .page-wrap .box-page-wrap {
+    width: 300px;
+    background-color: rgba(131, 155, 151, .8);
+    border-radius: 15px;
+}
+
+#pagination .page-wrap .box-page-wrap>ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+#pagination .page-wrap .box-page-wrap>ul li a{
+    color: #fff;
+    padding: 10px;
+}
+
+#pagination .page-wrap .box-page-wrap>ul li:not(:first-child):not(:last-child) a:hover {
+    background-color: #9a8194;
+
+}
+
+#pagination .page-wrap .box-page-wrap>ul li:first-child a:hover,
+#pagination .page-wrap .box-page-wrap>ul li:last-child a:hover {
+    color: #9a8194;
+}
+
+
+/* color pagination */
+
+#pagination .page-wrap .color-page-wrap {
+    width: 300px;
+}
+
+#pagination .page-wrap .color-page-wrap>ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+#pagination .page-wrap .color-page-wrap>ul li a{
+    color: #839b97;
+    font-weight: bold;
+    width: 20px;
+    margin: 0 auto;
+}
+
+#pagination .page-wrap .color-page-wrap>ul li a:hover {
+    color: #9a8194;
+}
+
+
+/* table */ 
+
+
+
+.basic-table {
+    width: 70%;
+    text-align: center;
+    line-height: 2em;
+}
+
+.basic-table thead {
+    background-color: rgba(131, 155, 151, .8);
+    color: #fff;
+}
+
+.basic-table tbody{
+    border-bottom: 1px solid #ccc;
+}
+
+.basic-table tbody tr:hover {
+    border: 2px solid rgba(131, 155, 151, .8);
+}
